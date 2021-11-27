@@ -30,27 +30,27 @@ export const AppRoutes: Routes = [
         children: [
             {
                 path: 'pages',
-                loadChildren: './pages/pages.module#PagesModule',
+                loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule),
                 // runGuardsAndResolvers: 'always',
               },
               {
                 path: 'super-admin',
-                loadChildren: './super-admin/super-admin.module#SuperAdminModule',
+                loadChildren: () => import('./super-admin/super-admin.module').then(m => m.SuperAdminModule),
                 // runGuardsAndResolvers: 'always',
               },
               {
                 path: 'company',
-                loadChildren: './company/company.module#CompanyModule',
+                loadChildren: () => import('./company/company.module').then(m => m.CompanyModule),
                 runGuardsAndResolvers: 'always',
               },
               {
                 path: 'shop',
-                loadChildren: './shop/shop.module#ShopModule',
+                loadChildren: () => import('./shop/shop.module').then(m => m.ShopModule),
                 runGuardsAndResolvers: 'always',
               },
               {
                 path: '',
-                loadChildren: './dashboard/dashboard.module#DashboardModule',
+                loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule),
                 runGuardsAndResolvers: 'always',
               },
                     ]
