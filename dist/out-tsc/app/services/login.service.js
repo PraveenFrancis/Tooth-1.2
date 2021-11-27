@@ -1,6 +1,6 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpHeaders } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 let LoginService = class LoginService {
     constructor(http) {
@@ -23,8 +23,7 @@ let LoginService = class LoginService {
 LoginService = __decorate([
     Injectable({
         providedIn: 'root'
-    }),
-    __metadata("design:paramtypes", [HttpClient])
+    })
 ], LoginService);
 export { LoginService };
 //# sourceMappingURL=login.service.js.map

@@ -1,10 +1,9 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/observable';
 import 'rxjs/add/observable/fromPromise';
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/map';
-import { HttpClient } from '@angular/common/http';
 import * as qz from 'qz-tray';
 import { sha256 } from 'js-sha256';
 import { KJUR, KEYUTIL, stob64, hextorstr } from 'jsrsasign';
@@ -132,8 +131,7 @@ let QzTrayService = class QzTrayService {
     }
 };
 QzTrayService = __decorate([
-    Injectable(),
-    __metadata("design:paramtypes", [HttpClient])
+    Injectable()
 ], QzTrayService);
 export { QzTrayService };
 //# sourceMappingURL=qz-tray.service.js.map

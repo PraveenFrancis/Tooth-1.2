@@ -1,4 +1,4 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
 let ShopAddComponent = class ShopAddComponent {
     constructor() { }
@@ -10,8 +10,7 @@ ShopAddComponent = __decorate([
         selector: 'app-shop-add',
         templateUrl: './shop-add.component.html',
         styleUrls: ['./shop-add.component.css']
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], ShopAddComponent);
 export { ShopAddComponent };
 //# sourceMappingURL=shop-add.component.js.map

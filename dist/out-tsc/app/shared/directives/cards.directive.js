@@ -1,5 +1,5 @@
-import { __decorate, __metadata } from "tslib";
-import { Directive, ElementRef } from '@angular/core';
+import { __decorate } from "tslib";
+import { Directive } from '@angular/core';
 // Card Portlet Refresh
 let cardPortletRefresh = class cardPortletRefresh {
     constructor(el) {
@@ -19,8 +19,7 @@ let cardPortletRefresh = class cardPortletRefresh {
 cardPortletRefresh = __decorate([
     Directive({
         selector: '[cardPortletRefresh]'
-    }),
-    __metadata("design:paramtypes", [ElementRef])
+    })
 ], cardPortletRefresh);
 export { cardPortletRefresh };
 //Card Portlet Refresh
@@ -42,8 +41,7 @@ let cardPortletDelete = class cardPortletDelete {
 cardPortletDelete = __decorate([
     Directive({
         selector: '[card-portlet-delete]'
-    }),
-    __metadata("design:paramtypes", [ElementRef])
+    })
 ], cardPortletDelete);
 export { cardPortletDelete };
 export const Cards_Directives = [

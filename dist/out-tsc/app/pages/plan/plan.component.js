@@ -1,7 +1,5 @@
-import { __decorate, __metadata } from "tslib";
-import { AdminService } from '../../services/admin.service';
+import { __decorate } from "tslib";
 import { Component, Input } from '@angular/core';
-import { ToastrService } from 'ngx-toastr';
 let PlanComponent = class PlanComponent {
     constructor(adminService, toastrService) {
         this.adminService = adminService;
@@ -5953,16 +5951,14 @@ let PlanComponent = class PlanComponent {
     }
 };
 __decorate([
-    Input(),
-    __metadata("design:type", Object)
+    Input()
 ], PlanComponent.prototype, "id", void 0);
 PlanComponent = __decorate([
     Component({
         selector: 'app-plan',
         templateUrl: './plan.component.html',
         styleUrls: ['./plan.component.css']
-    }),
-    __metadata("design:paramtypes", [AdminService, ToastrService])
+    })
 ], PlanComponent);
 export { PlanComponent };
 //# sourceMappingURL=plan.component.js.map

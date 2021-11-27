@@ -1,4 +1,4 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
 import { Subject } from 'rxjs';
 let SuppliersComponent = class SuppliersComponent {
@@ -14,8 +14,7 @@ SuppliersComponent = __decorate([
         selector: 'app-suppliers',
         templateUrl: './suppliers.component.html',
         styleUrls: ['./suppliers.component.css']
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], SuppliersComponent);
 export { SuppliersComponent };
 //# sourceMappingURL=suppliers.component.js.map

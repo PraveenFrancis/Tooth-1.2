@@ -1,10 +1,6 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
-// import { element } from '"@angular/core"';
-import { Router, ActivatedRoute } from '@angular/router';
-import { AdminService } from '../../services/admin.service';
-import { ToastrService } from 'ngx-toastr';
+import { Validators } from '@angular/forms';
 let PlanDetailsComponent = class PlanDetailsComponent {
     constructor(_formBuilder, route, adminService, router, toastrService) {
         this._formBuilder = _formBuilder;
@@ -12871,9 +12867,7 @@ PlanDetailsComponent = __decorate([
         selector: 'app-plan-details',
         templateUrl: './plan-details.component.html',
         styleUrls: ['./plan-details.component.css']
-    }),
-    __metadata("design:paramtypes", [FormBuilder, ActivatedRoute, AdminService,
-        Router, ToastrService])
+    })
 ], PlanDetailsComponent);
 export { PlanDetailsComponent };
 //# sourceMappingURL=plan-details.component.js.map

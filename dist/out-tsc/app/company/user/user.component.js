@@ -1,7 +1,5 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
-import { AdminService } from '../../services/admin.service';
-import { Router, ActivatedRoute } from '@angular/router';
 let UserComponent = class UserComponent {
     constructor(adminService, route, router) {
         this.adminService = adminService;
@@ -58,10 +56,7 @@ UserComponent = __decorate([
         selector: 'app-user',
         templateUrl: './user.component.html',
         styleUrls: ['./user.component.css']
-    }),
-    __metadata("design:paramtypes", [AdminService,
-        ActivatedRoute,
-        Router])
+    })
 ], UserComponent);
 export { UserComponent };
 //# sourceMappingURL=user.component.js.map

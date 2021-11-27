@@ -1,12 +1,5 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
-import { LoginService } from '../services/login.service';
-import { Router, ActivatedRoute } from '@angular/router';
-// import { User } from '../models/user';
-import { TranslateService } from '@ngx-translate/core';
-import { ToastrService } from 'ngx-toastr';
-import { NgxSpinnerService } from 'ngx-spinner';
-import { Title } from '@angular/platform-browser';
 let LoginComponent = class LoginComponent {
     constructor(titleService, router, loginService, route, spinner, translate, toastrService) {
         this.titleService = titleService;
@@ -70,14 +63,7 @@ LoginComponent = __decorate([
         selector: 'app-login',
         templateUrl: './login.component.html',
         styleUrls: ['./login.component.css']
-    }),
-    __metadata("design:paramtypes", [Title,
-        Router,
-        LoginService,
-        ActivatedRoute,
-        NgxSpinnerService,
-        TranslateService,
-        ToastrService])
+    })
 ], LoginComponent);
 export { LoginComponent };
 //# sourceMappingURL=login.component.js.map

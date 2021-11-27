@@ -1,6 +1,5 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
 let CommonLayoutComponent = class CommonLayoutComponent {
     constructor(_router, _route) {
         this._router = _router;
@@ -41,8 +40,7 @@ CommonLayoutComponent = __decorate([
         selector: 'app-dashboard',
         templateUrl: './common-layout.component.html',
         styleUrls: ['./common-layout.component.css']
-    }),
-    __metadata("design:paramtypes", [Router, ActivatedRoute])
+    })
 ], CommonLayoutComponent);
 export { CommonLayoutComponent };
 //# sourceMappingURL=common-layout.component.js.map

@@ -25,10 +25,12 @@ export const AppRoutes = [
             {
                 path: 'pages',
                 loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule),
+                // runGuardsAndResolvers: 'always',
             },
             {
                 path: 'super-admin',
                 loadChildren: () => import('./super-admin/super-admin.module').then(m => m.SuperAdminModule),
+                // runGuardsAndResolvers: 'always',
             },
             {
                 path: 'company',

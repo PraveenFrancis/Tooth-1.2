@@ -19,7 +19,7 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 // Routing Module
 import { AppRoutes } from './app.routing';
 // webcam
-import {WebcamModule} from 'ngx-webcam';
+// import {WebcamModule} from 'ngx-webcam';
 
 // App Component
 import { AppComponent } from './app.component';
@@ -67,7 +67,6 @@ registerLocaleData(localeHi, 'hi-HI', localeHiExtra);
         OwlNativeDateTimeModule,
         TagInputModule,
         NgxPrintModule,
-        WebcamModule,
         MomentModule,
         Ng2SearchPipeModule,
         NgxSmartModalModule.forChild(),

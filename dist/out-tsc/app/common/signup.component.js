@@ -1,9 +1,5 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
-import { AdminService } from '../services/admin.service';
-import { ToastrService } from 'ngx-toastr';
-import { Router } from '@angular/router';
-import { LoginService } from '../services/login.service';
 let SignupComponent = class SignupComponent {
     constructor(adminService, loginService, toastrService, router) {
         this.adminService = adminService;
@@ -58,9 +54,7 @@ SignupComponent = __decorate([
         selector: 'app-signup',
         templateUrl: './signup.component.html',
         styleUrls: ['./signup.component.css']
-    }),
-    __metadata("design:paramtypes", [AdminService, LoginService,
-        ToastrService, Router])
+    })
 ], SignupComponent);
 export { SignupComponent };
 //# sourceMappingURL=signup.component.js.map

@@ -1,7 +1,5 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
-import { AdminService } from '../../services/admin.service';
-import { ToastrService } from 'ngx-toastr';
 import { Subject } from 'rxjs';
 let CompanyListComponent = class CompanyListComponent {
     constructor(adminService, toastrService) {
@@ -80,8 +78,7 @@ CompanyListComponent = __decorate([
         selector: 'app-company-list',
         templateUrl: './company-list.component.html',
         styleUrls: ['./company-list.component.css']
-    }),
-    __metadata("design:paramtypes", [AdminService, ToastrService])
+    })
 ], CompanyListComponent);
 export { CompanyListComponent };
 //# sourceMappingURL=company-list.component.js.map

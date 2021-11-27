@@ -1,4 +1,4 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
 let ForgetPasswordComponent = class ForgetPasswordComponent {
     constructor() { }
@@ -10,8 +10,7 @@ ForgetPasswordComponent = __decorate([
         selector: 'app-forget-password',
         templateUrl: './forget-password.component.html',
         styleUrls: ['./forget-password.component.css']
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], ForgetPasswordComponent);
 export { ForgetPasswordComponent };
 //# sourceMappingURL=forget-password.component.js.map

@@ -1,4 +1,4 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
 let DashboardComponent = class DashboardComponent {
     constructor() { }
@@ -10,8 +10,7 @@ DashboardComponent = __decorate([
         selector: 'app-dashboard',
         templateUrl: './dashboard.component.html',
         styleUrls: ['./dashboard.component.css']
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], DashboardComponent);
 export { DashboardComponent };
 //# sourceMappingURL=dashboard.component.js.map

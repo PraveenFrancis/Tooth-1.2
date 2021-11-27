@@ -1,4 +1,4 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Injectable } from '@angular/core';
 let ThemeConstants = class ThemeConstants {
     constructor() {
@@ -25,8 +25,7 @@ let ThemeConstants = class ThemeConstants {
     }
 };
 ThemeConstants = __decorate([
-    Injectable(),
-    __metadata("design:paramtypes", [])
+    Injectable()
 ], ThemeConstants);
 export { ThemeConstants };
 //# sourceMappingURL=theme-constant.js.map

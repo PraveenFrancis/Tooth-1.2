@@ -1,9 +1,6 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
-import { Router, ActivatedRoute } from '@angular/router';
-import { AdminService } from '../../services/admin.service';
-import { ToastrService } from 'ngx-toastr';
+import { Validators } from '@angular/forms';
 let PlanAddComponent = class PlanAddComponent {
     constructor(_formBuilder, route, toastrService, router, adminService) {
         this._formBuilder = _formBuilder;
@@ -108,9 +105,7 @@ PlanAddComponent = __decorate([
         selector: 'app-plan-add',
         templateUrl: './plan-add.component.html',
         styleUrls: ['./plan-add.component.css']
-    }),
-    __metadata("design:paramtypes", [FormBuilder, ActivatedRoute, ToastrService,
-        Router, AdminService])
+    })
 ], PlanAddComponent);
 export { PlanAddComponent };
 //# sourceMappingURL=plan-add.component.js.map

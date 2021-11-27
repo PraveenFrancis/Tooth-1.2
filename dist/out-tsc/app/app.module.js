@@ -18,7 +18,7 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 // Routing Module
 import { AppRoutes } from './app.routing';
 // webcam
-import { WebcamModule } from 'ngx-webcam';
+// import {WebcamModule} from 'ngx-webcam';
 // App Component
 import { AppComponent } from './app.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -66,7 +66,6 @@ AppModule = __decorate([
             OwlNativeDateTimeModule,
             TagInputModule,
             NgxPrintModule,
-            WebcamModule,
             MomentModule,
             Ng2SearchPipeModule,
             NgxSmartModalModule.forChild(),

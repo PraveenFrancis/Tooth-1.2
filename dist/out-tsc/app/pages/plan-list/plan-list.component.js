@@ -1,8 +1,5 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
-import { AdminService } from '../../services/admin.service';
-import { ToastrService } from 'ngx-toastr';
-import { Router, ActivatedRoute } from '@angular/router';
 let PlanListComponent = class PlanListComponent {
     constructor(adminService, toastrService, route, router) {
         this.adminService = adminService;
@@ -66,10 +63,7 @@ PlanListComponent = __decorate([
         selector: 'app-plan-list',
         templateUrl: './plan-list.component.html',
         styleUrls: ['./plan-list.component.css']
-    }),
-    __metadata("design:paramtypes", [AdminService,
-        ToastrService, ActivatedRoute,
-        Router])
+    })
 ], PlanListComponent);
 export { PlanListComponent };
 //# sourceMappingURL=plan-list.component.js.map

@@ -1,6 +1,6 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { Validators } from '@angular/forms';
 let UserListComponent = class UserListComponent {
     constructor(_formBuilder) {
         this._formBuilder = _formBuilder;
@@ -35,8 +35,7 @@ UserListComponent = __decorate([
         selector: 'app-user-list',
         templateUrl: './user-list.component.html',
         styleUrls: ['./user-list.component.css']
-    }),
-    __metadata("design:paramtypes", [FormBuilder])
+    })
 ], UserListComponent);
 export { UserListComponent };
 //# sourceMappingURL=user-list.component.js.map

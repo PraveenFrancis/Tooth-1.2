@@ -1,6 +1,6 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { HttpHeaders, HttpParams } from '@angular/common/http';
 import { throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators/';
 import { environment } from '../../environments/environment';
@@ -129,8 +129,7 @@ let AdminService = class AdminService {
 AdminService = __decorate([
     Injectable({
         providedIn: 'root'
-    }),
-    __metadata("design:paramtypes", [HttpClient])
+    })
 ], AdminService);
 export { AdminService };
 //# sourceMappingURL=admin.service.js.map

@@ -1,5 +1,5 @@
-import { __decorate, __metadata } from "tslib";
-import { Directive, HostListener, ElementRef } from '@angular/core';
+import { __decorate } from "tslib";
+import { Directive, HostListener } from '@angular/core';
 //sidebar toggler
 let sidebarToggler = class sidebarToggler {
     constructor() { }
@@ -9,16 +9,12 @@ let sidebarToggler = class sidebarToggler {
     }
 };
 __decorate([
-    HostListener('click', ['$event']),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", void 0)
+    HostListener('click', ['$event'])
 ], sidebarToggler.prototype, "toggleOpen", null);
 sidebarToggler = __decorate([
     Directive({
         selector: '[sidebarToggler]'
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], sidebarToggler);
 export { sidebarToggler };
 //sidebar dropdown
@@ -47,8 +43,7 @@ let sidebarDropdown = class sidebarDropdown {
 sidebarDropdown = __decorate([
     Directive({
         selector: '[sideBar]'
-    }),
-    __metadata("design:paramtypes", [ElementRef])
+    })
 ], sidebarDropdown);
 export { sidebarDropdown };
 export const Sidebar_Directives = [
