@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/web",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -46,7 +47,6 @@
               "src/scripts/sha-256.min.js",
               "src/assets/Ionicons/css/ionicons.min.css",
               "src/styles.css"
-
             ],
             "scripts": [
               "./node_modules/pace-js/pace.min.js",
@@ -68,10 +68,16 @@
               "node_modules/yadcf/jquery.dataTables.yadcf.js",
               "node_modules/pdfmake/build/pdfmake.min.js",
               "node_modules/pdfmake/build/vfs_fonts.js"
-                       ]
+            ]
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -166,5 +172,8 @@
       }
     }
   },
-  "defaultProject": "espire"
+  "defaultProject": "espire",
+  "cli": {
+    "analytics": false
+  }
 }
