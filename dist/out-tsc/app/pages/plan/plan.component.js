@@ -6,7 +6,6 @@ let PlanComponent = class PlanComponent {
     constructor(adminService, toastrService) {
         this.adminService = adminService;
         this.toastrService = toastrService;
-        this.bodydata = { PatientID: this.id, SelectedTeeth: null, tablename: null, price: null, date: null, message: null, stage: null };
         this.teeth18 = false;
         this.teeth17 = false;
         this.teeth16 = false;
@@ -109,6 +108,7 @@ let PlanComponent = class PlanComponent {
         this.DentureValue = [];
     }
     ngOnInit() {
+        this.bodydata = { PatientID: this.id, SelectedTeeth: null, tablename: null, price: null, date: null, message: null, stage: null };
         console.log(this.id, 'iddddddddddddd');
     }
     teeth(mode, teethValue) {

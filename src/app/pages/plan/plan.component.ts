@@ -9,7 +9,6 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class PlanComponent implements OnInit {
  @Input() id: any;
- bodydata = {PatientID: this.id , SelectedTeeth: null , tablename: null , price: null , date: null , message: null , stage: null };
 teeth18 = false; teeth17 = false; teeth16 = false; teeth15 = false; teeth14 = false; teeth13 = false; teeth12 = false; teeth11 = false;
 teeth21 = false; teeth22 = false; teeth23 = false; teeth24 = false; teeth25 = false; teeth26 = false; teeth27 = false; teeth28 = false;
 teeth48 = false; teeth47 = false; teeth46 = false; teeth45 = false; teeth44 = false; teeth43 = false; teeth42 = false; teeth41 = false;
@@ -106,11 +105,13 @@ ChromeCobaltCssArray = new Array();
 Acrylic = false;
 AcrylicCssArray = new Array();
 DentureValue = [];
-
+bodydata;
 
   constructor(private adminService: AdminService , private toastrService: ToastrService) { }
 
   ngOnInit() { 
+ this.bodydata = {PatientID: this.id , SelectedTeeth: null , tablename: null , price: null , date: null , message: null , stage: null };
+
     console.log(this.id , 'iddddddddddddd');
   }
 
