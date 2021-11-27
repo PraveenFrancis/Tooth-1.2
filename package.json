@@ -30,7 +30,6 @@
     "@ngx-translate/http-loader": "3.0.1",
     "@swimlane/ngx-datatable": "^14.0.0",
     "@types/googlemaps": "^3.30.11",
-    "@types/jquery": "^3.5.9",
     "@types/jquery.datatables": "^1.10.36",
     "@vertx/core": "^4.2.1",
     "ammap3": "^3.21.13",
