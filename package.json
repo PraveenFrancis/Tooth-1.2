@@ -33,6 +33,7 @@
     "@swimlane/ngx-datatable": "^14.0.0",
     "@types/googlemaps": "^3.30.11",
     "@types/jquery.datatables": "^1.10.36",
+    "@vertx/core": "^4.2.1",
     "ammap3": "^3.21.13",
     "angular-archwizard": "^3.0.0",
     "angular-datatables": "^5.1.0",
@@ -90,7 +91,6 @@
     "ngx-spinner": "^7.2.0",
     "ngx-toastr": "^9.1.1",
     "ngx-webcam": "^0.2.0",
-    "node-sass": "^4.13.0",
     "nouislider": "^10.1.0",
     "npm": "^6.9.0",
     "nvd3": "^1.8.6",
@@ -130,9 +130,15 @@
     "karma-coverage-istanbul-reporter": "~2.0.0",
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "node-sass": "^6.0.1",
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
     "typescript": "~3.2.4"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
 }

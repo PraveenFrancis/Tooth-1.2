@@ -348,167 +348,171 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       console.log(data ,  'getDiagnosisByPatientID');
     });
   }
-  teeth(mode , teethValue) {
-    if (mode === 'tooth18' ) { if (this.teeth18 === false ) {  this.CarriesTeethFn();
-       this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-       this.ColorCssFn(mode);
-      this.teeth18 = true; this.selectedTeethValue.push(teethValue); 
+  validate(mode, teethValue) {
+    this.CarriesTeethFn();
+    this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+    this.ColorCssFn(mode);
+    this.teeth18 = true; this.selectedTeethValue.push(teethValue);
     // if (this.Mesialchecked === true ) {this.MesialCSSarray[18] = true;}
     // if (this.Distalchecked === true ) {  this.DistalCSSarray[18] = true;}
     // if (this.Lingualchecked === true ) { this.LingualCSSarray[18] = true;}
     // if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[18] = true;}
     // if (this.Buccalchecked === true ) { this.BuccalCSSarray[18] = true;}
 
-    if (this.rootSection === true ) {this.rootCSSarray[18] = true;}
-    if (this.crownSection === true ) {this.crownCSSarray[18] = true;}
-    if (this.severalDamaged === true ) {this.severalDamagedCSSarray[18] = true;}
+    if (this.rootSection === true) { this.rootCSSarray[18] = true; }
+    if (this.crownSection === true) { this.crownCSSarray[18] = true; }
+    if (this.severalDamaged === true) { this.severalDamagedCSSarray[18] = true; }
 
-    if (this.MildSection === true ) {this.MildCSSarray[18] = true;}
-    if (this.ModerateSection === true ) {this.ModerateCSSarray[18] = true;}
-    if (this.SevereSection === true ) {this.SevereCSSarray[18] = true;}
-// 
-    if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[18] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[18] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[18] = true;}
+    if (this.MildSection === true) { this.MildCSSarray[18] = true; }
+    if (this.ModerateSection === true) { this.ModerateCSSarray[18] = true; }
+    if (this.SevereSection === true) { this.SevereCSSarray[18] = true; }
+    // 
+    if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[18] = true; }
+    if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[18] = true; }
+    if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[18] = true; }
 
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[18] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[18] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[18] = true;}
+    if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[18] = true; }
+    if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[18] = true; }
+    if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[18] = true; }
 
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[18] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[18] = true;}
+    if (this.GummSmileActive === true) { this.GummSmileCSSArray[18] = true; }
+    if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[18] = true; }
 
-    if (this.necrosis === true ) {this.necrosisCSSArray[18] = true;}
+    if (this.necrosis === true) { this.necrosisCSSArray[18] = true; }
 
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[18] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[18] = true;}
+    if (this.saticfactory === true) { this.SatisfactoryCSSArray[18] = true; }
+    if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[18] = true; }
 
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[18] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[18] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[18] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[18] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[18] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[18] = true;}
+    if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[18] = true; }
+    if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[18] = true; }
+    if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[18] = true; }
+    if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[18] = true; }
+    if (this.Internalchecked === true) { this.InternalCSSarray[18] = true; }
+    if (this.Externalchecked === true) { this.ExternalCSSarray[18] = true; }
 
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[18] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[18] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[18] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
+    if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[18] = true; }
+    if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[18] = true; }
+    if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[18] = true; }
+    if (this.LargeMaxillarySinusActive === true) {
       this.LargeMaxillarySinusCSSArray[18] = true;
     }
 
-    if (this.okk === true ) {this.okCSSArray[18] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[18] = true;}
+    if (this.okk === true) { this.okCSSArray[18] = true; }
+    if (this.otherr === true) { this.otherCSSArray[18] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[18] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[18] = true;}
+    if (this.postok === true) { this.postokCSSArray[18] = true; }
+    if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[18] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[18] = true;}
+    if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[18] = true; }
 
 
-  }  
-    else {
+  }
+  check(mode, teethValue) {
+    this.ColorCssFn(mode);
+    this.CarriesTeethFn();
+    this.vaneerFnValue(mode);
+    this.crownFnValue(mode);
+    this.onlayFnValue(mode);
+    // this.BuccalCSSarray[18] = false; this.DistalCSSarray[18] = false; this.OcclusalCSSarray[18] = false;this.LingualCSSarray[18] = false;this.MesialCSSarray[18] = false; 
+    this.teeth18 = false;
+    this.crownCSSarray[18] = false;
+    this.rootCSSarray[18] = false;
+    this.severalDamagedCSSarray[18] = false;
+    this.MildCSSarray[18] = false;
+    this.ModerateCSSarray[18] = false;
+    this.SevereCSSarray[18] = false;
+    this.GingivalRecessionMildCSSArray[18] = false;
+    this.GingivalRecessionModerateCSSArray[18] = false;
+    this.GingivalRecessionSevereCSSArray[18] = false;
+    this.PeriodontitisMildCSSArray[18] = false;
+    this.PeriodontitisModerateCSSArray[18] = false;
+    this.PeriodontitisSevereCSSArray[18] = false;
+    this.GummSmileCSSArray[18] = false;
+    this.GingivalOvergrowthCSSArray[18] = false;
+    this.necrosisCSSArray[18] = false;
+    this.SatisfactoryCSSArray[18] = false;
+    this.UnsatisfactoryCSSArray[18] = false;
+    this.ApicalLesionMildCSSArray[18] = false;
+    this.ApicalLesionModerateCSSArray[18] = false;
+    this.ApicalLesionSevereCSSArray[18] = false;
+    this.BrokenInstrumentinCanalCSSArray[18] = false;
+    this.InternalCSSarray[18] = false;
+    this.ExternalCSSarray[18] = false;
+    this.MissingTeethCSSArray[18] = false;
+    this.ImpactedTeethCSSArray[18] = false;
+    this.ImpactedInfectedTeethCSSArray[18] = false;
+    this.LargeMaxillarySinusCSSArray[18] = false;
+    this.okCSSArray[18] = false;
+    this.otherCSSArray[18] = false;
+    this.postokCSSArray[18] = false;
+    this.postunsatisfactoryCSSArray[18] = false;
+    this.DiscoloredCSSArray[18] = false;
+
+    const found = this.selectedTeethValue.findIndex(element => element === 18);
+    this.selectedTeethValue.splice(found, 1);
+  }
+  validateTooth17(mode, teethValue) {
+    if (this.teeth17 === false) {
       this.ColorCssFn(mode);
-      this.CarriesTeethFn();
-      this.vaneerFnValue(mode);
-      this.crownFnValue(mode);
-      this.onlayFnValue(mode);
-      // this.BuccalCSSarray[18] = false; this.DistalCSSarray[18] = false; this.OcclusalCSSarray[18] = false;this.LingualCSSarray[18] = false;this.MesialCSSarray[18] = false; 
-      this.teeth18 = false; 
-      this.crownCSSarray[18] = false;
-      this.rootCSSarray[18] = false;
-      this.severalDamagedCSSarray[18] = false;
-      this.MildCSSarray[18] = false;
-      this.ModerateCSSarray[18] = false;  
-      this.SevereCSSarray[18] = false;
-      this.GingivalRecessionMildCSSArray[18] = false;
-      this.GingivalRecessionModerateCSSArray[18] = false;
-      this.GingivalRecessionSevereCSSArray[18] = false;
-      this.PeriodontitisMildCSSArray[18] = false;
-      this.PeriodontitisModerateCSSArray[18] = false;
-      this.PeriodontitisSevereCSSArray[18] = false;
-      this.GummSmileCSSArray[18] = false;
-      this.GingivalOvergrowthCSSArray[18] = false;
-      this.necrosisCSSArray[18] = false;
-      this.SatisfactoryCSSArray[18] = false;
-      this.UnsatisfactoryCSSArray[18] = false;
-      this.ApicalLesionMildCSSArray[18] = false;
-      this.ApicalLesionModerateCSSArray[18] = false;
-      this.ApicalLesionSevereCSSArray[18] = false;
-      this.BrokenInstrumentinCanalCSSArray[18] = false;
-      this.InternalCSSarray[18] = false;
-      this.ExternalCSSarray[18] = false;
-      this.MissingTeethCSSArray[18] = false;
-      this.ImpactedTeethCSSArray[18] = false;
-      this.ImpactedInfectedTeethCSSArray[18] = false;
-      this.LargeMaxillarySinusCSSArray[18] = false;
-      this.okCSSArray[18] = false;
-      this.otherCSSArray[18] = false;
-      this.postokCSSArray[18] = false;
-      this.postunsatisfactoryCSSArray[18] = false;
-      this.DiscoloredCSSArray[18] = false;
-     
-      const found = this.selectedTeethValue.findIndex(element => element === 18);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth17' ) {   if (this.teeth17 === false ) {this.ColorCssFn(mode);
       this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
       this.teeth17 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[17] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[17] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[17] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[17] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[17] = true;}
+      if (this.Mesialchecked === true) { this.MesialCSSarray[17] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[17] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[17] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[17] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[17] = true; }
 
-      if (this.rootSection === true ) {this.rootCSSarray[17] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[17] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[17] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[17] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[17] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[17] = true; }
 
-      if (this.MildSection === true ) {this.MildCSSarray[17] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[17] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[17] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[17] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[17] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[17] = true; }
 
-    if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[17] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[17] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[17] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[17] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[17] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[17] = true; }
 
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[17] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[17] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[17] = true;}
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[17] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[17] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[17] = true; }
 
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[17] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[17] = true;}
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[17] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[17] = true; }
 
-    if (this.necrosis === true ) {this.necrosisCSSArray[17] = true;}
+      if (this.necrosis === true) { this.necrosisCSSArray[17] = true; }
 
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[17] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[17] = true;}
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[17] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[17] = true; }
 
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[17] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[17] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[17] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[17] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[17] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[17] = true;}
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[17] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[17] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[17] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[17] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[17] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[17] = true; }
 
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[17] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[17] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[17] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[17] = true;
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[17] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[17] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[17] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[17] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[17] = true; }
+      if (this.otherr === true) { this.otherCSSArray[17] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[17] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[17] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[17] = true; }
+
+
     }
-
-    if (this.okk === true ) {this.okCSSArray[17] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[17] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[17] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[17] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[17] = true;}
-
-
-  }  
-    else {this.ColorCssFn(mode);  this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-      this.vaneerFnValue(mode); this.crownFnValue(mode); this.BuccalCSSarray[17] = false; this.DistalCSSarray[17] = false; this.OcclusalCSSarray[17] = false;this.LingualCSSarray[17] = false;this.MesialCSSarray[17] = false; this.teeth17 = false;
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.vaneerFnValue(mode); this.crownFnValue(mode); this.BuccalCSSarray[17] = false; this.DistalCSSarray[17] = false; this.OcclusalCSSarray[17] = false; this.LingualCSSarray[17] = false; this.MesialCSSarray[17] = false; this.teeth17 = false;
       this.crownCSSarray[17] = false;
       this.rootCSSarray[17] = false;
       this.severalDamagedCSSarray[17] = false;
@@ -542,64 +546,69 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[17] = false;
       this.DiscoloredCSSArray[17] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 17);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth16' ) {   if (this.teeth16 === false ) {this.ColorCssFn(mode);
+      this.selectedTeethValue.splice(found, 1);
+    }
+  }
+  validateTooth16(mode, teethValue) {
+    if (this.teeth16 === false) {
+      this.ColorCssFn(mode);
       this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
       this.vaneerFnValue(mode); this.crownFnValue(mode); this.teeth16 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[16] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[16] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[16] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[16] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[16] = true;}
-      
-      if (this.rootSection === true ) {this.rootCSSarray[16] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[16] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[16] = true;}
+      if (this.Mesialchecked === true) { this.MesialCSSarray[16] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[16] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[16] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[16] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[16] = true; }
 
-      if (this.MildSection === true ) {this.MildCSSarray[16] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[16] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[16] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[16] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[16] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[16] = true; }
 
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[16] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[16] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[16] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[16] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[16] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[16] = true; }
 
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[16] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[16] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[16] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[16] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[16] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[16] = true; }
 
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[16] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[16] = true;}
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[16] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[16] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[16] = true; }
 
-    if (this.necrosis === true ) {this.necrosisCSSArray[16] = true;}
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[16] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[16] = true; }
 
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[16] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[16] = true;}
+      if (this.necrosis === true) { this.necrosisCSSArray[16] = true; }
 
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[16] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[16] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[16] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[16] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[16] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[16] = true;}
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[16] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[16] = true; }
 
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[16] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[16] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[16] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { this.LargeMaxillarySinusCSSArray[16] = true;}
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[16] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[16] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[16] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[16] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[16] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[16] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[16] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[16] = true;}
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[16] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[16] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[16] = true; }
+      if (this.LargeMaxillarySinusActive === true) { this.LargeMaxillarySinusCSSArray[16] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[16] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[16] = true;}
+      if (this.okk === true) { this.okCSSArray[16] = true; }
+      if (this.otherr === true) { this.otherCSSArray[16] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[16] = true;}
+      if (this.postok === true) { this.postokCSSArray[16] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[16] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[16] = true; }
 
 
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-      this.BuccalCSSarray[16] = false; this.DistalCSSarray[16] = false; this.OcclusalCSSarray[16] = false;this.LingualCSSarray[16] = false;this.MesialCSSarray[16] = false;this.teeth16 = false;
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.BuccalCSSarray[16] = false; this.DistalCSSarray[16] = false; this.OcclusalCSSarray[16] = false; this.LingualCSSarray[16] = false; this.MesialCSSarray[16] = false; this.teeth16 = false;
       this.crownCSSarray[16] = false;
       this.rootCSSarray[16] = false;
       this.severalDamagedCSSarray[16] = false;
@@ -633,68 +642,73 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[16] = false;
       this.DiscoloredCSSArray[16] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 16);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth15' ) {   if (this.teeth15 === false ) {this.ColorCssFn(mode);
+      this.selectedTeethValue.splice(found, 1);
+    }
+  }
+  validateTooth15(mode, teethValue) {
+    if (this.teeth15 === false) {
+      this.ColorCssFn(mode);
       this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
       this.vaneerFnValue(mode); this.teeth15 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[15] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[15] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[15] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[15] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[15] = true;}
+      if (this.Mesialchecked === true) { this.MesialCSSarray[15] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[15] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[15] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[15] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[15] = true; }
 
-      if (this.rootSection === true ) {this.rootCSSarray[15] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[15] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[15] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[15] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[15] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[15] = true; }
 
-      if (this.MildSection === true ) {this.MildCSSarray[15] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[15] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[15] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[15] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[15] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[15] = true; }
 
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[15] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[15] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[15] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[15] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[15] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[15] = true; }
 
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[15] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[15] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[15] = true;}
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[15] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[15] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[15] = true; }
 
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[15] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[15] = true;}
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[15] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[15] = true; }
 
-    if (this.necrosis === true ) {this.necrosisCSSArray[15] = true;}
+      if (this.necrosis === true) { this.necrosisCSSArray[15] = true; }
 
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[15] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[15] = true;}
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[15] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[15] = true; }
 
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[15] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[15] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[15] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[15] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[15] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[15] = true;}
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[15] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[15] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[15] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[15] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[15] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[15] = true; }
 
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[15] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[15] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[15] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[15] = true;
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[15] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[15] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[15] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[15] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[15] = true; }
+      if (this.otherr === true) { this.otherCSSArray[15] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[15] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[15] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[15] = true; }
+
+
     }
-
-    if (this.okk === true ) {this.okCSSArray[15] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[15] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[15] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[15] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[15] = true;}
-
-
-      } 
-      else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-         this.BuccalCSSarray[15] = false; 
-          this.DistalCSSarray[15] = false; this.OcclusalCSSarray[15] = false;this.LingualCSSarray[15] = false;this.MesialCSSarray[15] = false; this.teeth15 = false; 
-          this.crownCSSarray[15] = false;
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.BuccalCSSarray[15] = false;
+      this.DistalCSSarray[15] = false; this.OcclusalCSSarray[15] = false; this.LingualCSSarray[15] = false; this.MesialCSSarray[15] = false; this.teeth15 = false;
+      this.crownCSSarray[15] = false;
       this.rootCSSarray[15] = false;
       this.severalDamagedCSSarray[15] = false;
       this.MildCSSarray[15] = false;
@@ -727,66 +741,70 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[15] = false;
       this.DiscoloredCSSArray[15] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 15);
-      this.selectedTeethValue.splice(found , 1); }}
-
-    if (mode === 'tooth14' ) {   if (this.teeth14 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-      this.teeth14 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[14] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[14] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[14] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[14] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[14] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[14] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[14] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[14] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[14] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[14] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[14] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[14] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[14] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[14] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[14] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[14] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[14] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[14] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[14] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[14] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[14] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[14] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[14] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[14] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[14] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[14] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[14] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[14] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[14] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[14] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[14] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[14] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
+  }
+  validateTooth14(mode, teethValue) {
+    if (this.teeth14 === false) {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.teeth14 = true; this.selectedTeethValue.push(teethValue);
+      if (this.Mesialchecked === true) { this.MesialCSSarray[14] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[14] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[14] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[14] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[14] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[14] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[14] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[14] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[14] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[14] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[14] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[14] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[14] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[14] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[14] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[14] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[14] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[14] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[14] = true; }
+
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[14] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[14] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[14] = true; }
+
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[14] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[14] = true; }
+
+      if (this.necrosis === true) { this.necrosisCSSArray[14] = true; }
+
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[14] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[14] = true; }
+
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[14] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[14] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[14] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[14] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[14] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[14] = true; }
+
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[14] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[14] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[14] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[14] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[14] = true; }
+      if (this.otherr === true) { this.otherCSSArray[14] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[14] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[14] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[14] = true; }
 
 
-      }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-      this.BuccalCSSarray[14] = false; this.DistalCSSarray[14] = false; this.OcclusalCSSarray[14] = false;this.LingualCSSarray[14] = false;this.MesialCSSarray[14] = false; this.teeth14 = false; 
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.BuccalCSSarray[14] = false; this.DistalCSSarray[14] = false; this.OcclusalCSSarray[14] = false; this.LingualCSSarray[14] = false; this.MesialCSSarray[14] = false; this.teeth14 = false;
       this.crownCSSarray[14] = false;
       this.rootCSSarray[14] = false;
       this.severalDamagedCSSarray[14] = false;
@@ -794,10 +812,10 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.ModerateCSSarray[14] = false;
       this.SevereCSSarray[14] = false;
       this.GingivalRecessionMildCSSArray[14] = false;
-      this.GingivalRecessionModerateCSSArray[14] = false;    
+      this.GingivalRecessionModerateCSSArray[14] = false;
       this.GingivalRecessionSevereCSSArray[14] = false;
       this.PeriodontitisMildCSSArray[14] = false;
-      this.PeriodontitisModerateCSSArray[14] = false;    
+      this.PeriodontitisModerateCSSArray[14] = false;
       this.PeriodontitisSevereCSSArray[14] = false;
       this.GummSmileCSSArray[14] = false;
       this.GingivalOvergrowthCSSArray[14] = false;
@@ -820,64 +838,69 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[14] = false;
       this.DiscoloredCSSArray[14] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 14);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth13' ) {   if (this.teeth13 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-       this.teeth13 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[13] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[13] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[13] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[13] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[13] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[13] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[13] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[13] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[13] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[13] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[13] = true;}
-
-    if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[13] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[13] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[13] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[13] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[13] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[13] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[13] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[13] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[13] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[13] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[13] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[13] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[13] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[13] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[13] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[13] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[13] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[13] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[13] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[13] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[13] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
+  }
+  validateTooth13(mode, teethValue) {
+    if (this.teeth13 === false) {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.teeth13 = true; this.selectedTeethValue.push(teethValue);
+      if (this.Mesialchecked === true) { this.MesialCSSarray[13] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[13] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[13] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[13] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[13] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[13] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[13] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[13] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[13] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[13] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[13] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[13] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[13] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[13] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[13] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[13] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[13] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[13] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[13] = true; }
+
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[13] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[13] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[13] = true; }
+
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[13] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[13] = true; }
+
+      if (this.necrosis === true) { this.necrosisCSSArray[13] = true; }
+
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[13] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[13] = true; }
+
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[13] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[13] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[13] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[13] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[13] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[13] = true; }
+
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[13] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[13] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[13] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[13] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[13] = true; }
+      if (this.otherr === true) { this.otherCSSArray[13] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[13] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[13] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[13] = true; }
 
 
-     }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[13] = false; this.DistalCSSarray[13] = false; this.OcclusalCSSarray[13] = false;this.LingualCSSarray[13] = false;this.MesialCSSarray[13] = false; this.teeth13 = false; 
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[13] = false; this.DistalCSSarray[13] = false; this.OcclusalCSSarray[13] = false; this.LingualCSSarray[13] = false; this.MesialCSSarray[13] = false; this.teeth13 = false;
       this.crownCSSarray[13] = false;
       this.rootCSSarray[13] = false;
       this.severalDamagedCSSarray[13] = false;
@@ -911,65 +934,70 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[13] = false;
       this.DiscoloredCSSArray[13] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 13);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth12' ) {   if (this.teeth12 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); 
-      this.teeth12 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[12] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[12] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[12] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[12] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[12] = true;}
-      
-      if (this.rootSection === true ) {this.rootCSSarray[12] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[12] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[12] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[12] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[12] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[12] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[12] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[12] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[12] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[12] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[12] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[12] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[12] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[12] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[12] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[12] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[12] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[12] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[12] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[12] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[12] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[12] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[12] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[12] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[12] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[12] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[12] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
+  }
+  validateTooth12(mode, teethValue) {
+    if (this.teeth12 === false) {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.teeth12 = true; this.selectedTeethValue.push(teethValue);
+      if (this.Mesialchecked === true) { this.MesialCSSarray[12] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[12] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[12] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[12] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[12] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[12] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[12] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[12] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[12] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[12] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[12] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[12] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[12] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[12] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[12] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[12] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[12] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[12] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[12] = true; }
+
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[12] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[12] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[12] = true; }
+
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[12] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[12] = true; }
+
+      if (this.necrosis === true) { this.necrosisCSSArray[12] = true; }
+
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[12] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[12] = true; }
+
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[12] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[12] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[12] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[12] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[12] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[12] = true; }
+
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[12] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[12] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[12] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[12] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[12] = true; }
+      if (this.otherr === true) { this.otherCSSArray[12] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[12] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[12] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[12] = true; }
 
 
-   }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-      this.BuccalCSSarray[12] = false; this.DistalCSSarray[12] = false; this.OcclusalCSSarray[12] = false;this.LingualCSSarray[12] = false;this.MesialCSSarray[12] = false;  this.teeth12 = false; 
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.BuccalCSSarray[12] = false; this.DistalCSSarray[12] = false; this.OcclusalCSSarray[12] = false; this.LingualCSSarray[12] = false; this.MesialCSSarray[12] = false; this.teeth12 = false;
       this.crownCSSarray[12] = false;
       this.rootCSSarray[12] = false;
       this.severalDamagedCSSarray[12] = false;
@@ -1003,65 +1031,70 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[12] = false;
       this.DiscoloredCSSArray[12] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 12);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth11' ) {   if (this.teeth11 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-       this.teeth11 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[11] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[11] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[11] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[11] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[11] = true;}
-      
-      if (this.rootSection === true ) {this.rootCSSarray[11] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[11] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[11] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[11] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[11] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[11] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[11] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[11] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[11] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[11] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[11] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[11] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[11] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[11] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[11] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[11] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[11] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[11] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[11] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[11] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[11] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[11] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[11] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[11] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[11] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[11] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[11] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
+  }
+  validateTooth11(mode, teethValue) {
+    if (this.teeth11 === false) {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.teeth11 = true; this.selectedTeethValue.push(teethValue);
+      if (this.Mesialchecked === true) { this.MesialCSSarray[11] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[11] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[11] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[11] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[11] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[11] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[11] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[11] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[11] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[11] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[11] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[11] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[11] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[11] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[11] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[11] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[11] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[11] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[11] = true; }
+
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[11] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[11] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[11] = true; }
+
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[11] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[11] = true; }
+
+      if (this.necrosis === true) { this.necrosisCSSArray[11] = true; }
+
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[11] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[11] = true; }
+
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[11] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[11] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[11] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[11] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[11] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[11] = true; }
+
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[11] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[11] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[11] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[11] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[11] = true; }
+      if (this.otherr === true) { this.otherCSSArray[11] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[11] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[11] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[11] = true; }
 
 
-   }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-      this.BuccalCSSarray[11] = false; this.DistalCSSarray[11] = false; this.OcclusalCSSarray[11] = false;this.LingualCSSarray[11] = false;this.MesialCSSarray[11] = false; this.teeth11 = false; 
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.BuccalCSSarray[11] = false; this.DistalCSSarray[11] = false; this.OcclusalCSSarray[11] = false; this.LingualCSSarray[11] = false; this.MesialCSSarray[11] = false; this.teeth11 = false;
       this.crownCSSarray[11] = false;
       this.rootCSSarray[11] = false;
       this.severalDamagedCSSarray[11] = false;
@@ -1095,65 +1128,70 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[11] = false;
       this.DiscoloredCSSArray[11] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 11);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth21' ) {   if (this.teeth21 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-      this.teeth21 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[21] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[21] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[21] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[21] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[21] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[21] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[21] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[21] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[21] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[21] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[21] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[21] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[21] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[21] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[21] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[21] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[21] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[21] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[21] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[21] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[21] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[21] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[21] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[21] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[21] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[21] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[21] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[21] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[21] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[21] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[21] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[21] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
+  }
+  validateTooth21(mode, teethValue) {
+    if (this.teeth21 === false) {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.teeth21 = true; this.selectedTeethValue.push(teethValue);
+      if (this.Mesialchecked === true) { this.MesialCSSarray[21] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[21] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[21] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[21] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[21] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[21] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[21] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[21] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[21] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[21] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[21] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[21] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[21] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[21] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[21] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[21] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[21] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[21] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[21] = true; }
+
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[21] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[21] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[21] = true; }
+
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[21] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[21] = true; }
+
+      if (this.necrosis === true) { this.necrosisCSSArray[21] = true; }
+
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[21] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[21] = true; }
+
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[21] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[21] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[21] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[21] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[21] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[21] = true; }
+
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[21] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[21] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[21] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[21] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[21] = true; }
+      if (this.otherr === true) { this.otherCSSArray[21] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[21] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[21] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[21] = true; }
 
 
-   }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-      this.BuccalCSSarray[21] = false; this.DistalCSSarray[21] = false; this.OcclusalCSSarray[21] = false;this.LingualCSSarray[21] = false;this.MesialCSSarray[21] = false;  this.teeth21 = false; 
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.BuccalCSSarray[21] = false; this.DistalCSSarray[21] = false; this.OcclusalCSSarray[21] = false; this.LingualCSSarray[21] = false; this.MesialCSSarray[21] = false; this.teeth21 = false;
       this.crownCSSarray[21] = false;
       this.rootCSSarray[21] = false;
       this.severalDamagedCSSarray[21] = false;
@@ -1161,10 +1199,10 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.ModerateCSSarray[21] = false;
       this.SevereCSSarray[21] = false;
       this.GingivalRecessionMildCSSArray[21] = false;
-      this.GingivalRecessionModerateCSSArray[21] = false;    
+      this.GingivalRecessionModerateCSSArray[21] = false;
       this.GingivalRecessionSevereCSSArray[21] = false;
       this.PeriodontitisMildCSSArray[21] = false;
-      this.PeriodontitisModerateCSSArray[21] = false;    
+      this.PeriodontitisModerateCSSArray[21] = false;
       this.PeriodontitisSevereCSSArray[21] = false;
       this.GummSmileCSSArray[21] = false;
       this.GingivalOvergrowthCSSArray[21] = false;
@@ -1187,65 +1225,70 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[21] = false;
       this.DiscoloredCSSArray[21] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 21);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth22' ) {   if (this.teeth22 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-       this.teeth22 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[22] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[22] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[22] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[22] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[22] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[22] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[22] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[22] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[22] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[22] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[22] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[22] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[22] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[22] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[22] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[22] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[22] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[22] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[22] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[22] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[22] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[22] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[22] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[22] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[22] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[22] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[22] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[22] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[22] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[22] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[22] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[22] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
+  }
+  validateTooth22(mode, teethValue) {
+    if (this.teeth22 === false) {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.teeth22 = true; this.selectedTeethValue.push(teethValue);
+      if (this.Mesialchecked === true) { this.MesialCSSarray[22] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[22] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[22] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[22] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[22] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[22] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[22] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[22] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[22] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[22] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[22] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[22] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[22] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[22] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[22] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[22] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[22] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[22] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[22] = true; }
+
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[22] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[22] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[22] = true; }
+
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[22] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[22] = true; }
+
+      if (this.necrosis === true) { this.necrosisCSSArray[22] = true; }
+
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[22] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[22] = true; }
+
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[22] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[22] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[22] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[22] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[22] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[22] = true; }
+
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[22] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[22] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[22] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[22] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[22] = true; }
+      if (this.otherr === true) { this.otherCSSArray[22] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[22] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[22] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[22] = true; }
 
 
-   }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-      this.BuccalCSSarray[22] = false; this.DistalCSSarray[22] = false; this.OcclusalCSSarray[22] = false;this.LingualCSSarray[22] = false;this.MesialCSSarray[22] = false;  this.teeth22 = false; 
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.BuccalCSSarray[22] = false; this.DistalCSSarray[22] = false; this.OcclusalCSSarray[22] = false; this.LingualCSSarray[22] = false; this.MesialCSSarray[22] = false; this.teeth22 = false;
       this.crownCSSarray[22] = false;
       this.rootCSSarray[22] = false;
       this.severalDamagedCSSarray[22] = false;
@@ -1279,65 +1322,70 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[22] = false;
       this.DiscoloredCSSArray[22] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 22);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth23' ) {   if (this.teeth23 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-      this.teeth23 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[23] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[23] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[23] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[23] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[23] = true;}  
-
-      if (this.rootSection === true ) {this.rootCSSarray[23] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[23] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[23] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[23] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[23] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[23] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[23] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[23] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[23] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[23] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[23] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[23] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[23] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[23] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[23] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[23] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[23] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[23] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[23] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[23] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[23] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[23] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[23] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[23] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[23] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[23] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[23] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
+  }
+  validateTooth23(mode, teethValue) {
+    if (this.teeth23 === false) {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.teeth23 = true; this.selectedTeethValue.push(teethValue);
+      if (this.Mesialchecked === true) { this.MesialCSSarray[23] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[23] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[23] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[23] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[23] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[23] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[23] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[23] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[23] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[23] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[23] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[23] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[23] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[23] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[23] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[23] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[23] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[23] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[23] = true; }
+
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[23] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[23] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[23] = true; }
+
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[23] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[23] = true; }
+
+      if (this.necrosis === true) { this.necrosisCSSArray[23] = true; }
+
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[23] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[23] = true; }
+
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[23] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[23] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[23] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[23] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[23] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[23] = true; }
+
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[23] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[23] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[23] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[23] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[23] = true; }
+      if (this.otherr === true) { this.otherCSSArray[23] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[23] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[23] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[23] = true; }
 
 
-    }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-       this.BuccalCSSarray[23] = false; this.DistalCSSarray[23] = false; this.OcclusalCSSarray[23] = false;this.LingualCSSarray[23] = false;this.MesialCSSarray[23] = false;  this.teeth23 = false; 
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.BuccalCSSarray[23] = false; this.DistalCSSarray[23] = false; this.OcclusalCSSarray[23] = false; this.LingualCSSarray[23] = false; this.MesialCSSarray[23] = false; this.teeth23 = false;
       this.crownCSSarray[23] = false;
       this.rootCSSarray[23] = false;
       this.severalDamagedCSSarray[23] = false;
@@ -1345,10 +1393,10 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.ModerateCSSarray[23] = false;
       this.SevereCSSarray[23] = false;
       this.GingivalRecessionMildCSSArray[23] = false;
-      this.GingivalRecessionModerateCSSArray[23] = false;    
+      this.GingivalRecessionModerateCSSArray[23] = false;
       this.GingivalRecessionSevereCSSArray[23] = false;
       this.PeriodontitisMildCSSArray[23] = false;
-      this.PeriodontitisModerateCSSArray[23] = false;    
+      this.PeriodontitisModerateCSSArray[23] = false;
       this.PeriodontitisSevereCSSArray[23] = false;
       this.GummSmileCSSArray[23] = false;
       this.GingivalOvergrowthCSSArray[23] = false;
@@ -1371,65 +1419,70 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[23] = false;
       this.DiscoloredCSSArray[23] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 23);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth24' ) {   if (this.teeth24 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-       this.teeth24 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[24] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[24] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[24] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[24] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[24] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[24] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[24] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[24] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[24] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[24] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[24] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[24] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[24] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[24] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[24] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[24] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[24] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[24] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[24] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[24] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[24] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[24] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[24] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[24] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[24] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[24] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[24] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[24] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[24] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[24] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[24] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[24] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
+  }
+  validateTooth24(mode, teethValue) {
+    if (this.teeth24 === false) {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.teeth24 = true; this.selectedTeethValue.push(teethValue);
+      if (this.Mesialchecked === true) { this.MesialCSSarray[24] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[24] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[24] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[24] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[24] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[24] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[24] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[24] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[24] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[24] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[24] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[24] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[24] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[24] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[24] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[24] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[24] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[24] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[24] = true; }
+
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[24] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[24] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[24] = true; }
+
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[24] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[24] = true; }
+
+      if (this.necrosis === true) { this.necrosisCSSArray[24] = true; }
+
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[24] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[24] = true; }
+
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[24] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[24] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[24] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[24] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[24] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[24] = true; }
+
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[24] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[24] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[24] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[24] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[24] = true; }
+      if (this.otherr === true) { this.otherCSSArray[24] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[24] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[24] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[24] = true; }
 
 
-   }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-       this.BuccalCSSarray[24] = false; this.DistalCSSarray[24] = false; this.OcclusalCSSarray[24] = false;this.LingualCSSarray[24] = false;this.MesialCSSarray[24] = false;  this.teeth24 = false; 
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.BuccalCSSarray[24] = false; this.DistalCSSarray[24] = false; this.OcclusalCSSarray[24] = false; this.LingualCSSarray[24] = false; this.MesialCSSarray[24] = false; this.teeth24 = false;
       this.crownCSSarray[24] = false;
       this.rootCSSarray[24] = false;
       this.severalDamagedCSSarray[24] = false;
@@ -1437,10 +1490,10 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.ModerateCSSarray[24] = false;
       this.SevereCSSarray[24] = false;
       this.GingivalRecessionMildCSSArray[24] = false;
-      this.GingivalRecessionModerateCSSArray[24] = false;    
+      this.GingivalRecessionModerateCSSArray[24] = false;
       this.GingivalRecessionSevereCSSArray[24] = false;
       this.PeriodontitisMildCSSArray[24] = false;
-      this.PeriodontitisModerateCSSArray[24] = false;    
+      this.PeriodontitisModerateCSSArray[24] = false;
       this.PeriodontitisSevereCSSArray[24] = false;
       this.GummSmileCSSArray[24] = false;
       this.GingivalOvergrowthCSSArray[24] = false;
@@ -1463,65 +1516,70 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[24] = false;
       this.DiscoloredCSSArray[24] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 24);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth25' ) {   if (this.teeth25 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-      this.teeth25 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[25] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[25] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[25] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[25] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[25] = true;}
-      
-      if (this.rootSection === true ) {this.rootCSSarray[25] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[25] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[25] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[25] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[25] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[25] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[25] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[25] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[25] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[25] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[25] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[25] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[25] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[25] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[25] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[25] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[25] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[25] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[25] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[25] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[25] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[25] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[25] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[25] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[25] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[25] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[25] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
+  }
+  validateTooth25(mode, teethValue) {
+    if (this.teeth25 === false) {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.teeth25 = true; this.selectedTeethValue.push(teethValue);
+      if (this.Mesialchecked === true) { this.MesialCSSarray[25] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[25] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[25] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[25] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[25] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[25] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[25] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[25] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[25] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[25] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[25] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[25] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[25] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[25] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[25] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[25] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[25] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[25] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[25] = true; }
+
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[25] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[25] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[25] = true; }
+
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[25] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[25] = true; }
+
+      if (this.necrosis === true) { this.necrosisCSSArray[25] = true; }
+
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[25] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[25] = true; }
+
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[25] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[25] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[25] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[25] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[25] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[25] = true; }
+
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[25] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[25] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[25] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[25] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[25] = true; }
+      if (this.otherr === true) { this.otherCSSArray[25] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[25] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[25] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[25] = true; }
 
 
-   }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-       this.BuccalCSSarray[25] = false; this.DistalCSSarray[25] = false; this.OcclusalCSSarray[25] = false;this.LingualCSSarray[25] = false;this.MesialCSSarray[25] = false;  this.teeth25 = false; 
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.BuccalCSSarray[25] = false; this.DistalCSSarray[25] = false; this.OcclusalCSSarray[25] = false; this.LingualCSSarray[25] = false; this.MesialCSSarray[25] = false; this.teeth25 = false;
       this.crownCSSarray[25] = false;
       this.rootCSSarray[25] = false;
       this.severalDamagedCSSarray[25] = false;
@@ -1529,10 +1587,10 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.ModerateCSSarray[25] = false;
       this.SevereCSSarray[25] = false;
       this.GingivalRecessionMildCSSArray[25] = false;
-      this.GingivalRecessionModerateCSSArray[25] = false;    
+      this.GingivalRecessionModerateCSSArray[25] = false;
       this.GingivalRecessionSevereCSSArray[25] = false;
       this.PeriodontitisMildCSSArray[25] = false;
-      this.PeriodontitisModerateCSSArray[25] = false;    
+      this.PeriodontitisModerateCSSArray[25] = false;
       this.PeriodontitisSevereCSSArray[25] = false;
       this.GummSmileCSSArray[25] = false;
       this.GingivalOvergrowthCSSArray[25] = false;
@@ -1555,64 +1613,69 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[25] = false;
       this.DiscoloredCSSArray[25] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 25);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth26' ) {   if (this.teeth26 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
-       this.teeth26 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[26] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[26] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[26] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[26] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[26] = true;}  
-
-      if (this.rootSection === true ) {this.rootCSSarray[26] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[26] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[26] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[26] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[26] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[26] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[26] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[26] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[26] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[26] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[26] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[26] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[26] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[26] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[26] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[26] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[26] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[26] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[26] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[26] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[26] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[26] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[26] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[26] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[26] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[26] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[26] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
+  }
+  validateTooth26(mode, teethValue) {
+    if (this.teeth26 === false) {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);
+      this.teeth26 = true; this.selectedTeethValue.push(teethValue);
+      if (this.Mesialchecked === true) { this.MesialCSSarray[26] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[26] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[26] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[26] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[26] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[26] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[26] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[26] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[26] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[26] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[26] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[26] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[26] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[26] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[26] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[26] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[26] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[26] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[26] = true; }
+
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[26] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[26] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[26] = true; }
+
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[26] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[26] = true; }
+
+      if (this.necrosis === true) { this.necrosisCSSArray[26] = true; }
+
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[26] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[26] = true; }
+
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[26] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[26] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[26] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[26] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[26] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[26] = true; }
+
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[26] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[26] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[26] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[26] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[26] = true; }
+      if (this.otherr === true) { this.otherCSSArray[26] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[26] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[26] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[26] = true; }
 
 
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[26] = false; this.DistalCSSarray[26] = false; this.OcclusalCSSarray[26] = false;this.LingualCSSarray[26] = false;this.MesialCSSarray[26] = false;  this.teeth26 = false; 
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[26] = false; this.DistalCSSarray[26] = false; this.OcclusalCSSarray[26] = false; this.LingualCSSarray[26] = false; this.MesialCSSarray[26] = false; this.teeth26 = false;
       this.crownCSSarray[26] = false;
       this.rootCSSarray[26] = false;
       this.severalDamagedCSSarray[26] = false;
@@ -1620,10 +1683,10 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.ModerateCSSarray[26] = false;
       this.SevereCSSarray[26] = false;
       this.GingivalRecessionMildCSSArray[26] = false;
-      this.GingivalRecessionModerateCSSArray[26] = false;    
+      this.GingivalRecessionModerateCSSArray[26] = false;
       this.GingivalRecessionSevereCSSArray[26] = false;
       this.PeriodontitisMildCSSArray[26] = false;
-      this.PeriodontitisModerateCSSArray[26] = false;    
+      this.PeriodontitisModerateCSSArray[26] = false;
       this.PeriodontitisSevereCSSArray[26] = false;
       this.GummSmileCSSArray[26] = false;
       this.GingivalOvergrowthCSSArray[26] = false;
@@ -1646,63 +1709,68 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[26] = false;
       this.DiscoloredCSSArray[26] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 26);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth27' ) {   if (this.teeth27 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth27 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[27] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[27] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[27] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[27] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[27] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[27] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[27] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[27] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[27] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[27] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[27] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[27] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[27] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[27] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[27] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[27] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[27] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[27] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[27] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[27] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[27] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[27] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[27] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[27] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[27] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[27] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[27] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[27] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[27] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[27] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[27] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[27] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
+  }
+  validateTooth27(mode, teethValue) {
+    if (this.teeth27 === false) {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth27 = true; this.selectedTeethValue.push(teethValue);
+      if (this.Mesialchecked === true) { this.MesialCSSarray[27] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[27] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[27] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[27] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[27] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[27] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[27] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[27] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[27] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[27] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[27] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[27] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[27] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[27] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[27] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[27] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[27] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[27] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[27] = true; }
+
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[27] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[27] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[27] = true; }
+
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[27] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[27] = true; }
+
+      if (this.necrosis === true) { this.necrosisCSSArray[27] = true; }
+
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[27] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[27] = true; }
+
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[27] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[27] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[27] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[27] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[27] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[27] = true; }
+
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[27] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[27] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[27] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[27] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[27] = true; }
+      if (this.otherr === true) { this.otherCSSArray[27] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[27] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[27] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[27] = true; }
 
 
- }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[27] = false; this.DistalCSSarray[27] = false; this.OcclusalCSSarray[27] = false;this.LingualCSSarray[27] = false;this.MesialCSSarray[27] = false;  this.teeth27 = false; 
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[27] = false; this.DistalCSSarray[27] = false; this.OcclusalCSSarray[27] = false; this.LingualCSSarray[27] = false; this.MesialCSSarray[27] = false; this.teeth27 = false;
       this.crownCSSarray[27] = false;
       this.rootCSSarray[27] = false;
       this.severalDamagedCSSarray[27] = false;
@@ -1710,10 +1778,10 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.ModerateCSSarray[27] = false;
       this.SevereCSSarray[27] = false;
       this.GingivalRecessionMildCSSArray[27] = false;
-      this.GingivalRecessionModerateCSSArray[27] = false;    
+      this.GingivalRecessionModerateCSSArray[27] = false;
       this.GingivalRecessionSevereCSSArray[27] = false;
       this.PeriodontitisMildCSSArray[27] = false;
-      this.PeriodontitisModerateCSSArray[27] = false;    
+      this.PeriodontitisModerateCSSArray[27] = false;
       this.PeriodontitisSevereCSSArray[27] = false;
       this.GummSmileCSSArray[27] = false;
       this.GingivalOvergrowthCSSArray[27] = false;
@@ -1736,63 +1804,68 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[27] = false;
       this.DiscoloredCSSArray[27] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 27);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth28' ) {   if (this.teeth28 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth28 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[28] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[28] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[28] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[28] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[28] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[28] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[28] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[28] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[28] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[28] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[28] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[28] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[28] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[28] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[28] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[28] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[28] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[28] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[28] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[28] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[28] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[28] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[28] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[28] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[28] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[28] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[28] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[28] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[28] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[28] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[28] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[28] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
+  }
+  validateTooth28(mode, teethValue) {
+    if (this.teeth28 === false) {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth28 = true; this.selectedTeethValue.push(teethValue);
+      if (this.Mesialchecked === true) { this.MesialCSSarray[28] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[28] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[28] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[28] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[28] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[28] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[28] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[28] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[28] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[28] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[28] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[28] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[28] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[28] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[28] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[28] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[28] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[28] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[28] = true; }
+
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[28] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[28] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[28] = true; }
+
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[28] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[28] = true; }
+
+      if (this.necrosis === true) { this.necrosisCSSArray[28] = true; }
+
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[28] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[28] = true; }
+
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[28] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[28] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[28] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[28] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[28] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[28] = true; }
+
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[28] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[28] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[28] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[28] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[28] = true; }
+      if (this.otherr === true) { this.otherCSSArray[28] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[28] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[28] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[28] = true; }
 
 
- }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[28] = false; this.DistalCSSarray[28] = false; this.OcclusalCSSarray[28] = false;this.LingualCSSarray[28] = false;this.MesialCSSarray[28] = false; this.teeth28 = false; 
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[28] = false; this.DistalCSSarray[28] = false; this.OcclusalCSSarray[28] = false; this.LingualCSSarray[28] = false; this.MesialCSSarray[28] = false; this.teeth28 = false;
       this.crownCSSarray[28] = false;
       this.rootCSSarray[28] = false;
       this.severalDamagedCSSarray[28] = false;
@@ -1800,10 +1873,10 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.ModerateCSSarray[28] = false;
       this.SevereCSSarray[28] = false;
       this.GingivalRecessionMildCSSArray[28] = false;
-      this.GingivalRecessionModerateCSSArray[28] = false;    
+      this.GingivalRecessionModerateCSSArray[28] = false;
       this.GingivalRecessionSevereCSSArray[28] = false;
       this.PeriodontitisMildCSSArray[28] = false;
-      this.PeriodontitisModerateCSSArray[28] = false;    
+      this.PeriodontitisModerateCSSArray[28] = false;
       this.PeriodontitisSevereCSSArray[28] = false;
       this.GummSmileCSSArray[28] = false;
       this.GingivalOvergrowthCSSArray[28] = false;
@@ -1826,63 +1899,68 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[28] = false;
       this.DiscoloredCSSArray[28] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 28);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth48' ) {   if (this.teeth48 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth48 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[48] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[48] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[48] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[48] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[48] = true;}
-
-      if (this.rootSection === true ) {this.rootCSSarray[48] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[48] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[48] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[48] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[48] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[48] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[48] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[48] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[48] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[48] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[48] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[48] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[48] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[48] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[48] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[48] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[48] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[48] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[48] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[48] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[48] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[48] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[48] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[48] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[48] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[48] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[48] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
+  }
+  validateTooth48(mode, teethValue) {
+    if (this.teeth48 === false) {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth48 = true; this.selectedTeethValue.push(teethValue);
+      if (this.Mesialchecked === true) { this.MesialCSSarray[48] = true; }
+      if (this.Distalchecked === true) { this.DistalCSSarray[48] = true; }
+      if (this.Lingualchecked === true) { this.LingualCSSarray[48] = true; }
+      if (this.Occlusalchecked === true) { this.OcclusalCSSarray[48] = true; }
+      if (this.Buccalchecked === true) { this.BuccalCSSarray[48] = true; }
 
-    if (this.okk === true ) {this.okCSSArray[48] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[48] = true;}
+      if (this.rootSection === true) { this.rootCSSarray[48] = true; }
+      if (this.crownSection === true) { this.crownCSSarray[48] = true; }
+      if (this.severalDamaged === true) { this.severalDamagedCSSarray[48] = true; }
 
-    if (this.postok === true ) {this.postokCSSArray[48] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[48] = true;}
+      if (this.MildSection === true) { this.MildCSSarray[48] = true; }
+      if (this.ModerateSection === true) { this.ModerateCSSarray[48] = true; }
+      if (this.SevereSection === true) { this.SevereCSSarray[48] = true; }
 
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[48] = true;}
+      if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[48] = true; }
+      if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[48] = true; }
+      if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[48] = true; }
+
+      if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[48] = true; }
+      if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[48] = true; }
+      if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[48] = true; }
+
+      if (this.GummSmileActive === true) { this.GummSmileCSSArray[48] = true; }
+      if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[48] = true; }
+
+      if (this.necrosis === true) { this.necrosisCSSArray[48] = true; }
+
+      if (this.saticfactory === true) { this.SatisfactoryCSSArray[48] = true; }
+      if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[48] = true; }
+
+      if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[48] = true; }
+      if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[48] = true; }
+      if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[48] = true; }
+      if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[48] = true; }
+      if (this.Internalchecked === true) { this.InternalCSSarray[48] = true; }
+      if (this.Externalchecked === true) { this.ExternalCSSarray[48] = true; }
+
+      if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[48] = true; }
+      if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[48] = true; }
+      if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[48] = true; }
+      if (this.LargeMaxillarySinusActive === true) {
+        this.LargeMaxillarySinusCSSArray[48] = true;
+      }
+
+      if (this.okk === true) { this.okCSSArray[48] = true; }
+      if (this.otherr === true) { this.otherCSSArray[48] = true; }
+
+      if (this.postok === true) { this.postokCSSArray[48] = true; }
+      if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[48] = true; }
+
+      if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[48] = true; }
 
 
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[48] = false; this.DistalCSSarray[48] = false; this.OcclusalCSSarray[48] = false;this.LingualCSSarray[48] = false;this.MesialCSSarray[48] = false;  this.teeth48 = false;
+    }
+    else {
+      this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[48] = false; this.DistalCSSarray[48] = false; this.OcclusalCSSarray[48] = false; this.LingualCSSarray[48] = false; this.MesialCSSarray[48] = false; this.teeth48 = false;
       this.crownCSSarray[48] = false;
       this.rootCSSarray[48] = false;
       this.severalDamagedCSSarray[48] = false;
@@ -1890,10 +1968,10 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.ModerateCSSarray[48] = false;
       this.SevereCSSarray[48] = false;
       this.GingivalRecessionMildCSSArray[48] = false;
-      this.GingivalRecessionModerateCSSArray[48] = false;    
+      this.GingivalRecessionModerateCSSArray[48] = false;
       this.GingivalRecessionSevereCSSArray[48] = false;
       this.PeriodontitisMildCSSArray[48] = false;
-      this.PeriodontitisModerateCSSArray[48] = false;    
+      this.PeriodontitisModerateCSSArray[48] = false;
       this.PeriodontitisSevereCSSArray[48] = false;
       this.GummSmileCSSArray[48] = false;
       this.GingivalOvergrowthCSSArray[48] = false;
@@ -1916,1356 +1994,1538 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.postunsatisfactoryCSSArray[48] = false;
       this.DiscoloredCSSArray[48] = false;
       const found = this.selectedTeethValue.findIndex(element => element === 48);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth47' ) {   if (this.teeth47 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth47 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[47] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[47] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[47] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[47] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[47] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[47] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[47] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[47] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[47] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[47] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[47] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[47] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[47] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[47] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[47] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[47] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[47] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[47] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[47] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[47] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[47] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[47] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[47] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[47] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[47] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[47] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[47] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[47] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[47] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[47] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[47] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[47] = true;
+      this.selectedTeethValue.splice(found, 1);
     }
-
-    if (this.okk === true ) {this.okCSSArray[47] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[47] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[47] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[47] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[47] = true;}
-
-
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[47] = false; this.DistalCSSarray[47] = false; this.OcclusalCSSarray[47] = false;this.LingualCSSarray[47] = false;this.MesialCSSarray[47] = false;  this.teeth47 = false; 
-      this.crownCSSarray[47] = false;
-      this.rootCSSarray[47] = false;
-      this.severalDamagedCSSarray[47] = false;
-      this.MildCSSarray[47] = false;
-      this.ModerateCSSarray[47] = false;
-      this.SevereCSSarray[47] = false;
-      this.GingivalRecessionMildCSSArray[47] = false;
-      this.GingivalRecessionModerateCSSArray[47] = false;    
-      this.GingivalRecessionSevereCSSArray[47] = false;
-      this.PeriodontitisMildCSSArray[47] = false;
-      this.PeriodontitisModerateCSSArray[47] = false;    
-      this.PeriodontitisSevereCSSArray[47] = false;
-      this.GummSmileCSSArray[47] = false;
-      this.GingivalOvergrowthCSSArray[47] = false;
-      this.necrosisCSSArray[47] = false;
-      this.SatisfactoryCSSArray[47] = false;
-      this.UnsatisfactoryCSSArray[47] = false;
-      this.ApicalLesionMildCSSArray[47] = false;
-      this.ApicalLesionModerateCSSArray[47] = false;
-      this.ApicalLesionSevereCSSArray[47] = false;
-      this.BrokenInstrumentinCanalCSSArray[47] = false;
-      this.InternalCSSarray[47] = false;
-      this.ExternalCSSarray[47] = false;
-      this.MissingTeethCSSArray[47] = false;
-      this.ImpactedTeethCSSArray[47] = false;
-      this.ImpactedInfectedTeethCSSArray[47] = false;
-      this.LargeMaxillarySinusCSSArray[47] = false;
-      this.okCSSArray[47] = false;
-      this.otherCSSArray[47] = false;
-      this.postokCSSArray[47] = false;
-      this.postunsatisfactoryCSSArray[47] = false;
-      this.DiscoloredCSSArray[47] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 47);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth46' ) {   if (this.teeth46 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth46 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[46] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[46] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[46] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[46] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[46] = true;}  
-
-      if (this.rootSection === true ) {this.rootCSSarray[46] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[46] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[46] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[46] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[46] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[46] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[46] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[46] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[46] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[46] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[46] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[46] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[46] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[46] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[46] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[46] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[46] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[46] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[46] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[46] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[46] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[46] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[46] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[46] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[46] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[46] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[46] = true;
-    }
-
-    if (this.okk === true ) {this.okCSSArray[46] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[46] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[46] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[46] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[46] = true;}
-
-
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[46] = false; this.DistalCSSarray[46] = false; this.OcclusalCSSarray[46] = false;this.LingualCSSarray[46] = false;this.MesialCSSarray[46] = false;  this.teeth46 = false; 
-      this.crownCSSarray[46] = false;
-      this.rootCSSarray[46] = false;
-      this.severalDamagedCSSarray[46] = false;
-      this.MildCSSarray[46] = false;
-      this.ModerateCSSarray[46] = false;
-      this.SevereCSSarray[46] = false;
-      this.GingivalRecessionMildCSSArray[46] = false;
-      this.GingivalRecessionModerateCSSArray[46] = false;    
-      this.GingivalRecessionSevereCSSArray[46] = false;
-      this.PeriodontitisMildCSSArray[46] = false;
-      this.PeriodontitisModerateCSSArray[46] = false;    
-      this.PeriodontitisSevereCSSArray[46] = false;
-      this.GummSmileCSSArray[46] = false;
-      this.GingivalOvergrowthCSSArray[46] = false;
-      this.necrosisCSSArray[46] = false;
-      this.SatisfactoryCSSArray[46] = false;
-      this.UnsatisfactoryCSSArray[46] = false;
-      this.ApicalLesionMildCSSArray[46] = false;
-      this.ApicalLesionModerateCSSArray[46] = false;
-      this.ApicalLesionSevereCSSArray[46] = false;
-      this.BrokenInstrumentinCanalCSSArray[46] = false;
-      this.InternalCSSarray[46] = false;
-      this.ExternalCSSarray[46] = false;
-      this.MissingTeethCSSArray[46] = false;
-      this.ImpactedTeethCSSArray[46] = false;
-      this.ImpactedInfectedTeethCSSArray[46] = false;
-      this.LargeMaxillarySinusCSSArray[46] = false;
-      this.okCSSArray[46] = false;
-      this.otherCSSArray[46] = false;
-      this.postokCSSArray[46] = false;
-      this.postunsatisfactoryCSSArray[46] = false;
-      this.DiscoloredCSSArray[46] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 46);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth45' ) {   if (this.teeth45 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth45 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[45] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[45] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[45] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[45] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[45] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[45] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[45] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[45] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[45] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[45] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[45] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[45] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[45] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[45] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[45] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[45] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[45] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[45] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[45] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[45] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[45] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[45] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[45] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[45] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[45] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[45] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[45] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[45] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[45] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[45] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[45] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[45] = true;
-    }
-
-    if (this.okk === true ) {this.okCSSArray[45] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[45] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[45] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[45] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[45] = true;}
-
-
- }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[45] = false; this.DistalCSSarray[45] = false; this.OcclusalCSSarray[45] = false;this.LingualCSSarray[45] = false;this.MesialCSSarray[45] = false;  this.teeth45 = false;
-      this.crownCSSarray[45] = false;
-      this.rootCSSarray[45] = false;
-      this.severalDamagedCSSarray[45] = false;
-      this.MildCSSarray[45] = false;
-      this.ModerateCSSarray[45] = false;
-      this.SevereCSSarray[45] = false;
-      this.GingivalRecessionMildCSSArray[45] = false;
-      this.GingivalRecessionModerateCSSArray[45] = false;    
-      this.GingivalRecessionSevereCSSArray[45] = false;
-      this.PeriodontitisMildCSSArray[45] = false;
-      this.PeriodontitisModerateCSSArray[45] = false;    
-      this.PeriodontitisSevereCSSArray[45] = false;
-      this.GummSmileCSSArray[45] = false;
-      this.GingivalOvergrowthCSSArray[45] = false;
-      this.necrosisCSSArray[45] = false;
-      this.SatisfactoryCSSArray[45] = false;
-      this.UnsatisfactoryCSSArray[45] = false;
-      this.ApicalLesionMildCSSArray[45] = false;
-      this.ApicalLesionModerateCSSArray[45] = false;
-      this.ApicalLesionSevereCSSArray[45] = false;
-      this.BrokenInstrumentinCanalCSSArray[45] = false;
-      this.InternalCSSarray[45] = false;
-      this.ExternalCSSarray[45] = false;
-      this.MissingTeethCSSArray[45] = false;
-      this.ImpactedTeethCSSArray[45] = false;
-      this.ImpactedInfectedTeethCSSArray[45] = false;
-      this.LargeMaxillarySinusCSSArray[45] = false;
-      this.okCSSArray[45] = false;
-      this.otherCSSArray[45] = false;
-      this.postokCSSArray[45] = false;
-      this.postunsatisfactoryCSSArray[45] = false;
-      this.DiscoloredCSSArray[45] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 45);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth44' ) {   if (this.teeth44 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth44 = true; this.selectedTeethValue.push(teethValue); 
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[44] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[44] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[44] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[44] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[44] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[44] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[44] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[44] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[44] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[44] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[44] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[44] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[44] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[44] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[44] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[44] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[44] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[44] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[44] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[44] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[44] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[44] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[44] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[44] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[44] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[44] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[44] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[44] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[44] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[44] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[44] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[44] = true;
-    }
-
-    if (this.okk === true ) {this.okCSSArray[44] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[44] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[44] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[44] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[44] = true;}
-
-
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[44] = false; this.DistalCSSarray[44] = false; this.OcclusalCSSarray[44] = false;this.LingualCSSarray[44] = false;this.MesialCSSarray[44] = false;  this.teeth44 = false; 
-      this.crownCSSarray[44] = false;
-      this.rootCSSarray[44] = false;
-      this.severalDamagedCSSarray[44] = false;
-      this.MildCSSarray[44] = false;
-      this.ModerateCSSarray[44] = false;
-      this.SevereCSSarray[44] = false;
-      this.GingivalRecessionMildCSSArray[44] = false;
-      this.GingivalRecessionModerateCSSArray[44] = false;    
-      this.GingivalRecessionSevereCSSArray[44] = false;
-      this.PeriodontitisMildCSSArray[44] = false;
-      this.PeriodontitisModerateCSSArray[44] = false;    
-      this.PeriodontitisSevereCSSArray[44] = false;
-      this.GummSmileCSSArray[44] = false;
-      this.GingivalOvergrowthCSSArray[44] = false;
-      this.necrosisCSSArray[44] = false;
-      this.SatisfactoryCSSArray[44] = false;
-      this.UnsatisfactoryCSSArray[44] = false;
-      this.ApicalLesionMildCSSArray[44] = false;
-      this.ApicalLesionModerateCSSArray[44] = false;
-      this.ApicalLesionSevereCSSArray[44] = false;
-      this.BrokenInstrumentinCanalCSSArray[44] = false;
-      this.InternalCSSarray[44] = false;
-      this.ExternalCSSarray[44] = false;
-      this.MissingTeethCSSArray[44] = false;
-      this.ImpactedTeethCSSArray[44] = false;
-      this.ImpactedInfectedTeethCSSArray[44] = false;
-      this.LargeMaxillarySinusCSSArray[44] = false;
-      this.okCSSArray[44] = false;
-      this.otherCSSArray[44] = false;
-      this.postokCSSArray[44] = false;
-      this.postunsatisfactoryCSSArray[44] = false;
-      this.DiscoloredCSSArray[44] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 44);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth43' ) {   if (this.teeth43 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth43 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[43] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[43] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[43] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[43] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[43] = true;}  
-
-      if (this.rootSection === true ) {this.rootCSSarray[43] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[43] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[43] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[43] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[43] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[43] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[43] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[43] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[43] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[43] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[43] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[43] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[43] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[43] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[43] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[43] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[43] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[43] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[43] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[43] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[43] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[43] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[43] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[43] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[43] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[43] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[43] = true;
-    }
-
-    if (this.okk === true ) {this.okCSSArray[43] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[43] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[43] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[43] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[43] = true;}
-
-
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[43] = false; this.DistalCSSarray[43] = false; this.OcclusalCSSarray[43] = false;this.LingualCSSarray[43] = false;this.MesialCSSarray[43] = false;  this.teeth43 = false; 
-      this.crownCSSarray[43] = false;
-      this.rootCSSarray[43] = false;
-      this.severalDamagedCSSarray[43] = false;
-      this.MildCSSarray[43] = false;
-      this.ModerateCSSarray[43] = false;
-      this.SevereCSSarray[43] = false;
-      this.GingivalRecessionMildCSSArray[43] = false;
-      this.GingivalRecessionModerateCSSArray[43] = false;    
-      this.GingivalRecessionSevereCSSArray[43] = false;
-      this.PeriodontitisMildCSSArray[43] = false;
-      this.PeriodontitisModerateCSSArray[43] = false;    
-      this.PeriodontitisSevereCSSArray[43] = false;
-      this.GummSmileCSSArray[43] = false;
-      this.GingivalOvergrowthCSSArray[43] = false;
-      this.necrosisCSSArray[43] = false;
-      this.SatisfactoryCSSArray[43] = false;
-      this.UnsatisfactoryCSSArray[43] = false;
-      this.ApicalLesionMildCSSArray[43] = false;
-      this.ApicalLesionModerateCSSArray[43] = false;
-      this.ApicalLesionSevereCSSArray[43] = false;
-      this.BrokenInstrumentinCanalCSSArray[43] = false;
-      this.InternalCSSarray[43] = false;
-      this.ExternalCSSarray[43] = false;
-      this.MissingTeethCSSArray[43] = false;
-      this.ImpactedTeethCSSArray[43] = false;
-      this.ImpactedInfectedTeethCSSArray[43] = false;
-      this.LargeMaxillarySinusCSSArray[43] = false;
-      this.okCSSArray[43] = false;
-      this.otherCSSArray[43] = false;
-      this.postokCSSArray[43] = false;
-      this.postunsatisfactoryCSSArray[43] = false;
-      this.DiscoloredCSSArray[43] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 43);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth42' ) {   if (this.teeth42 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth42 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[42] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[42] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[42] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[42] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[42] = true;}  
-
-      if (this.rootSection === true ) {this.rootCSSarray[42] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[42] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[42] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[42] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[42] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[42] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[42] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[42] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[42] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[42] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[42] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[42] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[42] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[42] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[42] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[42] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[42] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[42] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[42] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[42] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[42] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[42] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[42] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[42] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[42] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[42] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[42] = true;
-    }
-
-    if (this.okk === true ) {this.okCSSArray[42] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[42] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[42] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[42] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[42] = true;}
-
-
-}  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[42] = false; this.DistalCSSarray[42] = false; this.OcclusalCSSarray[42] = false;this.LingualCSSarray[42] = false;this.MesialCSSarray[42] = false;  this.teeth42 = false; 
-      this.crownCSSarray[42] = false;
-      this.rootCSSarray[42] = false;
-      this.severalDamagedCSSarray[42] = false;
-      this.MildCSSarray[42] = false;
-      this.ModerateCSSarray[42] = false;
-      this.SevereCSSarray[42] = false;
-      this.GingivalRecessionMildCSSArray[42] = false;
-      this.GingivalRecessionModerateCSSArray[42] = false;    
-      this.GingivalRecessionSevereCSSArray[42] = false;
-      this.PeriodontitisMildCSSArray[42] = false;
-      this.PeriodontitisModerateCSSArray[42] = false;    
-      this.PeriodontitisSevereCSSArray[42] = false;
-      this.GummSmileCSSArray[42] = false;
-      this.GingivalOvergrowthCSSArray[42] = false;
-      this.necrosisCSSArray[42] = false;
-      this.SatisfactoryCSSArray[42] = false;
-      this.UnsatisfactoryCSSArray[42] = false;
-      this.ApicalLesionMildCSSArray[42] = false;
-      this.ApicalLesionModerateCSSArray[42] = false;
-      this.ApicalLesionSevereCSSArray[42] = false;
-      this.BrokenInstrumentinCanalCSSArray[42] = false;
-      this.InternalCSSarray[42] = false;
-      this.ExternalCSSarray[42] = false;
-      this.MissingTeethCSSArray[42] = false;
-      this.ImpactedTeethCSSArray[42] = false;
-      this.ImpactedInfectedTeethCSSArray[42] = false;
-      this.LargeMaxillarySinusCSSArray[42] = false;
-      this.okCSSArray[42] = false;
-      this.otherCSSArray[42] = false;
-      this.postokCSSArray[42] = false;
-      this.postunsatisfactoryCSSArray[42] = false;
-      this.DiscoloredCSSArray[42] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 42);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth41' ) {   if (this.teeth41 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth41 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[41] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[41] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[41] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[41] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[41] = true;}  
-
-      if (this.rootSection === true ) {this.rootCSSarray[41] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[41] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[41] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[41] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[41] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[41] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[41] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[41] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[41] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[41] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[41] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[41] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[41] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[41] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[41] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[41] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[41] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[41] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[41] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[41] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[41] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[41] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[41] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[41] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[41] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[41] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[41] = true;
-    }
-
-    if (this.okk === true ) {this.okCSSArray[41] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[41] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[41] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[41] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[41] = true;}
-
-
-   }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);this.BuccalCSSarray[41] = false; this.DistalCSSarray[41] = false; this.OcclusalCSSarray[41] = false;this.LingualCSSarray[41] = false;this.MesialCSSarray[41] = false; this.teeth41 = false; 
-      this.crownCSSarray[41] = false;
-      this.rootCSSarray[41] = false;
-      this.severalDamagedCSSarray[41] = false;
-      this.MildCSSarray[41] = false;
-      this.ModerateCSSarray[41] = false;
-      this.SevereCSSarray[41] = false;
-      this.GingivalRecessionMildCSSArray[41] = false;
-      this.GingivalRecessionModerateCSSArray[41] = false;    
-      this.GingivalRecessionSevereCSSArray[41] = false;
-      this.PeriodontitisMildCSSArray[41] = false;
-      this.PeriodontitisModerateCSSArray[41] = false;    
-      this.PeriodontitisSevereCSSArray[41] = false;
-      this.GummSmileCSSArray[41] = false;
-      this.GingivalOvergrowthCSSArray[41] = false;
-      this.necrosisCSSArray[41] = false;
-      this.SatisfactoryCSSArray[41] = false;
-      this.UnsatisfactoryCSSArray[41] = false;
-      this.ApicalLesionMildCSSArray[41] = false;
-      this.ApicalLesionModerateCSSArray[41] = false;
-      this.ApicalLesionSevereCSSArray[41] = false;
-      this.BrokenInstrumentinCanalCSSArray[41] = false;
-      this.InternalCSSarray[41] = false;
-      this.ExternalCSSarray[41] = false;
-      this.MissingTeethCSSArray[41] = false;
-      this.ImpactedTeethCSSArray[41] = false;
-      this.ImpactedInfectedTeethCSSArray[41] = false;
-      this.LargeMaxillarySinusCSSArray[41] = false;
-      this.okCSSArray[41] = false;
-      this.otherCSSArray[41] = false;
-      this.postokCSSArray[41] = false;
-      this.postunsatisfactoryCSSArray[41] = false;
-      this.DiscoloredCSSArray[41] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 41);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth31' ) {   if (this.teeth31 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth31 = true; this.selectedTeethValue.push(teethValue); 
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[31] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[31] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[31] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[31] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[31] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[31] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[31] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[31] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[31] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[31] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[31] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[31] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[31] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[31] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[31] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[31] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[31] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[31] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[31] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[31] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[31] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[31] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[31] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[31] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[31] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[31] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[31] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[31] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[31] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[31] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[31] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[31] = true;
-    }
-    if (this.okk === true ) {this.okCSSArray[31] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[31] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[31] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[31] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[31] = true;}
-
-
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);this.BuccalCSSarray[31] = false; this.DistalCSSarray[31] = false; this.OcclusalCSSarray[31] = false;this.LingualCSSarray[31] = false;this.MesialCSSarray[31] = false;  this.teeth31 = false; 
-      this.crownCSSarray[31] = false;
-      this.rootCSSarray[31] = false;
-      this.severalDamagedCSSarray[31] = false;
-      this.MildCSSarray[31] = false;
-      this.ModerateCSSarray[31] = false;
-      this.SevereCSSarray[31] = false;
-      this.GingivalRecessionMildCSSArray[31] = false;
-      this.GingivalRecessionModerateCSSArray[31] = false;    
-      this.GingivalRecessionSevereCSSArray[31] = false;
-      this.PeriodontitisMildCSSArray[31] = false;
-      this.PeriodontitisModerateCSSArray[31] = false;    
-      this.PeriodontitisSevereCSSArray[31] = false;
-      this.GummSmileCSSArray[31] = false;
-      this.GingivalOvergrowthCSSArray[31] = false;
-      this.necrosisCSSArray[31] = false;
-      this.SatisfactoryCSSArray[31] = false;
-      this.UnsatisfactoryCSSArray[31] = false;
-      this.ApicalLesionMildCSSArray[31] = false;
-      this.ApicalLesionModerateCSSArray[31] = false;
-      this.ApicalLesionSevereCSSArray[31] = false;
-      this.BrokenInstrumentinCanalCSSArray[31] = false;
-      this.InternalCSSarray[31] = false;
-      this.ExternalCSSarray[31] = false;
-      this.MissingTeethCSSArray[31] = false;
-      this.ImpactedTeethCSSArray[31] = false;
-      this.ImpactedInfectedTeethCSSArray[31] = false;
-      this.LargeMaxillarySinusCSSArray[31] = false;
-      this.okCSSArray[31] = false;
-      this.otherCSSArray[31] = false;
-      this.postokCSSArray[31] = false;
-      this.postunsatisfactoryCSSArray[31] = false;
-      this.DiscoloredCSSArray[31] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 31);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth32' ) {   if (this.teeth32 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth32 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[32] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[32] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[32] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[32] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[32] = true;}  
-
-      if (this.rootSection === true ) {this.rootCSSarray[32] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[32] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[32] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[32] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[32] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[32] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[32] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[32] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[32] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[32] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[32] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[32] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[32] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[32] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[32] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[32] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[32] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[32] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[32] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[32] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[32] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[32] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[32] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[32] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[32] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[32] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[32] = true;
-    }
-    if (this.okk === true ) {this.okCSSArray[32] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[32] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[32] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[32] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[32] = true;}
-
-
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode);this.BuccalCSSarray[32] = false; this.DistalCSSarray[32] = false; this.OcclusalCSSarray[32] = false;this.LingualCSSarray[32] = false;this.MesialCSSarray[32] = false;  this.teeth32 = false;
-      this.crownCSSarray[32] = false;
-      this.rootCSSarray[32] = false;
-      this.severalDamagedCSSarray[32] = false;
-      this.MildCSSarray[32] = false;
-      this.ModerateCSSarray[32] = false;
-      this.SevereCSSarray[32] = false;
-      this.GingivalRecessionMildCSSArray[32] = false;
-      this.GingivalRecessionModerateCSSArray[32] = false;    
-      this.GingivalRecessionSevereCSSArray[32] = false;
-      this.PeriodontitisMildCSSArray[32] = false;
-      this.PeriodontitisModerateCSSArray[32] = false;    
-      this.PeriodontitisSevereCSSArray[32] = false;
-      this.GummSmileCSSArray[32] = false;
-      this.GingivalOvergrowthCSSArray[32] = false;
-      this.necrosisCSSArray[32] = false;
-      this.SatisfactoryCSSArray[32] = false;
-      this.UnsatisfactoryCSSArray[32] = false;
-      this.ApicalLesionMildCSSArray[32] = false;
-      this.ApicalLesionModerateCSSArray[32] = false;
-      this.ApicalLesionSevereCSSArray[32] = false;
-      this.BrokenInstrumentinCanalCSSArray[32] = false;
-      this.InternalCSSarray[32] = false;
-      this.ExternalCSSarray[32] = false;
-      this.MissingTeethCSSArray[32] = false;
-      this.ImpactedTeethCSSArray[32] = false;
-      this.ImpactedInfectedTeethCSSArray[32] = false;
-      this.LargeMaxillarySinusCSSArray[32] = false;
-      this.okCSSArray[32] = false;
-      this.otherCSSArray[32] = false;
-      this.postokCSSArray[32] = false;
-      this.postunsatisfactoryCSSArray[32] = false;
-      this.DiscoloredCSSArray[32] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 32);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth33' ) {   if (this.teeth33 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth33 = true; this.selectedTeethValue.push(teethValue); 
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[33] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[33] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[33] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[33] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[33] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[33] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[33] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[33] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[33] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[33] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[33] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[33] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[33] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[33] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[33] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[33] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[33] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[33] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[33] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[33] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[33] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[33] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[33] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[33] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[33] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[33] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[33] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[33] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[33] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[33] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[33] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[33] = true;
-    }
-    if (this.okk === true ) {this.okCSSArray[33] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[33] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[33] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[33] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[33] = true;}
-
-
-    }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[33] = false; this.DistalCSSarray[33] = false; this.OcclusalCSSarray[33] = false;this.LingualCSSarray[33] = false;this.MesialCSSarray[33] = false;  this.teeth33 = false; 
-      this.crownCSSarray[33] = false;
-      this.rootCSSarray[33] = false;
-      this.severalDamagedCSSarray[33] = false;
-      this.MildCSSarray[33] = false;
-      this.ModerateCSSarray[33] = false;
-      this.SevereCSSarray[33] = false;
-      this.GingivalRecessionMildCSSArray[33] = false;
-      this.GingivalRecessionModerateCSSArray[33] = false;    
-      this.GingivalRecessionSevereCSSArray[33] = false;
-      this.PeriodontitisMildCSSArray[33] = false;
-      this.PeriodontitisModerateCSSArray[33] = false;    
-      this.PeriodontitisSevereCSSArray[33] = false;
-      this.GummSmileCSSArray[33] = false;
-      this.GingivalOvergrowthCSSArray[33] = false;
-      this.necrosisCSSArray[33] = false;
-      this.SatisfactoryCSSArray[33] = false;
-      this.UnsatisfactoryCSSArray[33] = false;
-      this.ApicalLesionMildCSSArray[33] = false;
-      this.ApicalLesionModerateCSSArray[33] = false;
-      this.ApicalLesionSevereCSSArray[33] = false;
-      this.BrokenInstrumentinCanalCSSArray[33] = false;
-      this.InternalCSSarray[33] = false;
-      this.ExternalCSSarray[33] = false;
-      this.MissingTeethCSSArray[33] = false;
-      this.ImpactedTeethCSSArray[33] = false;
-      this.ImpactedInfectedTeethCSSArray[33] = false;
-      this.LargeMaxillarySinusCSSArray[33] = false;
-      this.okCSSArray[33] = false;
-      this.otherCSSArray[33] = false;
-      this.postokCSSArray[33] = false;
-      this.postunsatisfactoryCSSArray[33] = false;
-      this.DiscoloredCSSArray[33] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 33);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth34' ) {   if (this.teeth34 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth34 = true; this.selectedTeethValue.push(teethValue); 
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[34] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[34] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[34] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[34] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[34] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[34] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[34] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[34] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[34] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[34] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[34] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[34] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[34] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[34] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[34] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[34] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[34] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[34] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[34] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[34] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[34] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[34] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[34] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[34] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[34] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[34] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[34] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[34] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[34] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[34] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[34] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[34] = true;
-    }
-
-    if (this.okk === true ) {this.okCSSArray[34] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[34] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[34] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[34] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[34] = true;}
-
-
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[34] = false; this.DistalCSSarray[34] = false; this.OcclusalCSSarray[34] = false;this.LingualCSSarray[34] = false;this.MesialCSSarray[34] = false;  this.teeth34 = false; 
-      this.crownCSSarray[34] = false;
-      this.rootCSSarray[34] = false;
-      this.severalDamagedCSSarray[34] = false;
-      this.MildCSSarray[34] = false;
-      this.ModerateCSSarray[34] = false;
-      this.SevereCSSarray[34] = false;
-      this.GingivalRecessionMildCSSArray[34] = false;
-      this.GingivalRecessionModerateCSSArray[34] = false;    
-      this.GingivalRecessionSevereCSSArray[34] = false;
-      this.PeriodontitisMildCSSArray[34] = false;
-      this.PeriodontitisModerateCSSArray[34] = false;    
-      this.PeriodontitisSevereCSSArray[34] = false;
-      this.GummSmileCSSArray[34] = false;
-      this.GingivalOvergrowthCSSArray[34] = false;
-      this.necrosisCSSArray[34] = false;
-      this.SatisfactoryCSSArray[34] = false;
-      this.UnsatisfactoryCSSArray[34] = false;
-      this.ApicalLesionMildCSSArray[34] = false;
-      this.ApicalLesionModerateCSSArray[34] = false;
-      this.ApicalLesionSevereCSSArray[34] = false;
-      this.BrokenInstrumentinCanalCSSArray[34] = false;
-      this.InternalCSSarray[34] = false;
-      this.ExternalCSSarray[34] = false;
-      this.MissingTeethCSSArray[34] = false;
-      this.ImpactedTeethCSSArray[34] = false;
-      this.ImpactedInfectedTeethCSSArray[34] = false;
-      this.LargeMaxillarySinusCSSArray[34] = false;
-      this.okCSSArray[34] = false;
-      this.otherCSSArray[34] = false;
-      this.postokCSSArray[34] = false;
-      this.postunsatisfactoryCSSArray[34] = false;
-      this.DiscoloredCSSArray[34] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 34);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth35' ) {   if (this.teeth35 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth35 = true; this.selectedTeethValue.push(teethValue); 
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[35] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[35] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[35] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[35] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[35] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[35] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[35] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[35] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[35] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[35] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[35] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[35] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[35] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[35] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[35] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[35] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[35] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[35] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[35] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[35] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[35] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[35] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[35] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[35] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[35] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[35] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[35] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[35] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[35] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[35] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[35] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[35] = true;
-    }
-
-    if (this.okk === true ) {this.okCSSArray[35] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[35] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[35] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[35] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[35] = true;}
-
-
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[35] = false; this.DistalCSSarray[35] = false; this.OcclusalCSSarray[35] = false;this.LingualCSSarray[35] = false;this.MesialCSSarray[35] = false; this.teeth35 = false; 
-      this.crownCSSarray[35] = false;
-      this.rootCSSarray[35] = false;
-      this.severalDamagedCSSarray[35] = false;
-      this.MildCSSarray[35] = false;
-      this.ModerateCSSarray[35] = false;
-      this.SevereCSSarray[35] = false;
-      this.GingivalRecessionMildCSSArray[35] = false;
-      this.GingivalRecessionModerateCSSArray[35] = false;    
-      this.GingivalRecessionSevereCSSArray[35] = false;
-      this.PeriodontitisMildCSSArray[35] = false;
-      this.PeriodontitisModerateCSSArray[35] = false;    
-      this.PeriodontitisSevereCSSArray[35] = false;
-      this.GummSmileCSSArray[35] = false;
-      this.GingivalOvergrowthCSSArray[35] = false;
-      this.necrosisCSSArray[35] = false;
-      this.SatisfactoryCSSArray[35] = false;
-      this.UnsatisfactoryCSSArray[35] = false;
-      this.ApicalLesionMildCSSArray[35] = false;
-      this.ApicalLesionModerateCSSArray[35] = false;
-      this.ApicalLesionSevereCSSArray[35] = false;
-      this.BrokenInstrumentinCanalCSSArray[35] = false;
-      this.InternalCSSarray[35] = false;
-      this.ExternalCSSarray[35] = false;
-      this.MissingTeethCSSArray[35] = false;
-      this.ImpactedTeethCSSArray[35] = false;
-      this.ImpactedInfectedTeethCSSArray[35] = false;
-      this.LargeMaxillarySinusCSSArray[35] = false;
-      this.okCSSArray[35] = false;
-      this.otherCSSArray[35] = false;
-      this.postokCSSArray[35] = false;
-      this.postunsatisfactoryCSSArray[35] = false;
-      this.DiscoloredCSSArray[35] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 35);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth36' ) {   if (this.teeth36 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth36 = true; this.selectedTeethValue.push(teethValue); 
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[36] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[36] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[36] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[36] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[36] = true;} 
-
-      if (this.rootSection === true ) {this.rootCSSarray[36] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[36] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[36] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[36] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[36] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[36] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[36] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[36] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[36] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[36] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[36] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[36] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[36] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[36] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[36] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[36] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[36] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[36] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[36] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[36] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[36] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[36] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[36] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[36] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[36] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[36] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[36] = true;
-    }
-
-    if (this.okk === true ) {this.okCSSArray[36] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[36] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[36] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[36] = true;}
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[36] = true;}
-
-
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[36] = false; this.DistalCSSarray[36] = false; this.OcclusalCSSarray[36] = false;this.LingualCSSarray[36] = false;this.MesialCSSarray[36] = false;  this.teeth36 = false; 
-      this.crownCSSarray[36] = false;
-      this.rootCSSarray[36] = false;
-      this.severalDamagedCSSarray[36] = false;
-      this.MildCSSarray[36] = false;
-      this.ModerateCSSarray[36] = false;
-      this.SevereCSSarray[36] = false;
-      this.GingivalRecessionMildCSSArray[36] = false;
-      this.GingivalRecessionModerateCSSArray[36] = false;    
-      this.GingivalRecessionSevereCSSArray[36] = false;
-      this.PeriodontitisMildCSSArray[36] = false;
-      this.PeriodontitisModerateCSSArray[36] = false;    
-      this.PeriodontitisSevereCSSArray[36] = false;
-      this.GummSmileCSSArray[36] = false;
-      this.GingivalOvergrowthCSSArray[36] = false;
-      this.necrosisCSSArray[36] = false;
-      this.SatisfactoryCSSArray[36] = false;
-      this.UnsatisfactoryCSSArray[36] = false;
-      this.ApicalLesionMildCSSArray[36] = false;
-      this.ApicalLesionModerateCSSArray[36] = false;
-      this.ApicalLesionSevereCSSArray[36] = false;
-      this.BrokenInstrumentinCanalCSSArray[36] = false;
-      this.InternalCSSarray[36] = false;
-      this.ExternalCSSarray[36] = false;
-      this.MissingTeethCSSArray[36] = false;
-      this.ImpactedTeethCSSArray[36] = false;
-      this.ImpactedInfectedTeethCSSArray[36] = false;
-      this.LargeMaxillarySinusCSSArray[36] = false;
-      this.okCSSArray[36] = false;
-      this.otherCSSArray[36] = false;
-      this.postokCSSArray[36] = false;
-      this.postunsatisfactoryCSSArray[36] = false;
-      this.DiscoloredCSSArray[36] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 36);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth37' ) {   if (this.teeth37 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth37 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[37] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[37] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[37] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[37] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[37] = true;}  
-
-      if (this.rootSection === true ) {this.rootCSSarray[37] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[37] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[37] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[37] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[37] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[37] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[37] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[37] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[37] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[37] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[37] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[37] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[37] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[37] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[37] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[37] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[37] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[37] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[37] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[37] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[37] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[37] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[37] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[37] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[37] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[37] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[37] = true;
-    }
-
-    if (this.okk === true ) {this.okCSSArray[37] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[37] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[37] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[37] = true;}
-
-
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[37] = true;}
-
-
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[37] = false; this.DistalCSSarray[37] = false; this.OcclusalCSSarray[37] = false;this.LingualCSSarray[37] = false;this.MesialCSSarray[37] = false;  this.teeth37 = false; 
-      this.crownCSSarray[37] = false;
-      this.rootCSSarray[37] = false;
-      this.severalDamagedCSSarray[37] = false;
-      this.MildCSSarray[37] = false;
-      this.ModerateCSSarray[37] = false;
-      this.SevereCSSarray[37] = false;
-      this.GingivalRecessionMildCSSArray[37] = false;
-      this.GingivalRecessionModerateCSSArray[37] = false;    
-      this.GingivalRecessionSevereCSSArray[37] = false;
-      this.PeriodontitisMildCSSArray[37] = false;
-      this.PeriodontitisModerateCSSArray[37] = false;    
-      this.PeriodontitisSevereCSSArray[37] = false;
-      this.GummSmileCSSArray[37] = false;
-      this.GingivalOvergrowthCSSArray[37] = false;
-      this.necrosisCSSArray[37] = false;
-      this.SatisfactoryCSSArray[37] = false;
-      this.UnsatisfactoryCSSArray[37] = false;
-      this.ApicalLesionMildCSSArray[37] = false;
-      this.ApicalLesionModerateCSSArray[37] = false;
-      this.ApicalLesionSevereCSSArray[37] = false;
-      this.BrokenInstrumentinCanalCSSArray[37] = false;
-      this.InternalCSSarray[37] = false;
-      this.ExternalCSSarray[37] = false;
-      this.MissingTeethCSSArray[37] = false;
-      this.ImpactedTeethCSSArray[37] = false;
-      this.ImpactedInfectedTeethCSSArray[37] = false;
-      this.LargeMaxillarySinusCSSArray[37] = false;
-      this.okCSSArray[37] = false;
-      this.otherCSSArray[37] = false;
-      this.postokCSSArray[37] = false;
-      this.postunsatisfactoryCSSArray[37] = false;
-      this.DiscoloredCSSArray[37] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 37);
-      this.selectedTeethValue.splice(found , 1); }}
-    if (mode === 'tooth38' ) {   if (this.teeth38 === false ) {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth38 = true; this.selectedTeethValue.push(teethValue);
-      if (this.Mesialchecked === true ) {this.MesialCSSarray[38] = true;}
-      if (this.Distalchecked === true ) {  this.DistalCSSarray[38] = true;}
-      if (this.Lingualchecked === true ) { this.LingualCSSarray[38] = true;}
-      if (this.Occlusalchecked === true ) {this.OcclusalCSSarray[38] = true;}
-      if (this.Buccalchecked === true ) { this.BuccalCSSarray[38] = true;}  
-
-      if (this.rootSection === true ) {this.rootCSSarray[38] = true;}
-      if (this.crownSection === true ) {this.crownCSSarray[38] = true;}
-      if (this.severalDamaged === true ) {this.severalDamagedCSSarray[38] = true;}
-
-      if (this.MildSection === true ) {this.MildCSSarray[38] = true;}
-      if (this.ModerateSection === true ) {this.ModerateCSSarray[38] = true;}
-      if (this.SevereSection === true ) {this.SevereCSSarray[38] = true;}
-
-      if (this.GingivalRecessionMild === true ) {this.GingivalRecessionMildCSSArray[38] = true;}
-    if (this.GingivalRecessionModerate === true ) {this.GingivalRecessionModerateCSSArray[38] = true;}
-    if (this.GingivalRecessionSevere === true ) {this.GingivalRecessionSevereCSSArray[38] = true;}
-
-    if (this.PeriodontitisMild === true ) {this.PeriodontitisMildCSSArray[38] = true;}
-    if (this.PeriodontitisModerate === true ) {this.PeriodontitisModerateCSSArray[38] = true;}
-    if (this.PeriodontitisSevere === true ) {this.PeriodontitisSevereCSSArray[38] = true;}
-
-    if (this.GummSmileActive === true ) {this.GummSmileCSSArray[38] = true;}
-    if (this.GingivalOvergrowthActive === true ) {this.GingivalOvergrowthCSSArray[38] = true;}
-
-    if (this.necrosis === true ) {this.necrosisCSSArray[38] = true;}
-
-    if (this.saticfactory === true ) {this.SatisfactoryCSSArray[38] = true;}
-    if (this.unsatisfactory === true ) {this.UnsatisfactoryCSSArray[38] = true;}
-
-    if (this.ApicalLesionMild === true ) {this.ApicalLesionMildCSSArray[38] = true;}
-    if (this.ApicalLesionModerate === true ) {this.ApicalLesionModerateCSSArray[38] = true;}
-    if (this.ApicalLesionSevere === true ) {this.ApicalLesionSevereCSSArray[38] = true;}
-    if (this.BrokenInstrumentinCanal === true ) {this.BrokenInstrumentinCanalCSSArray[38] = true;}
-    if (this.Internalchecked === true ) {this.InternalCSSarray[38] = true;}
-    if (this.Externalchecked === true ) {this.ExternalCSSarray[38] = true;}
-
-    if (this.MissingTeethActive === true ) {this.MissingTeethCSSArray[38] = true;}
-    if (this.ImpactedTeethActive === true ) {this.ImpactedTeethCSSArray[38] = true;}
-    if (this.ImpactedInfectedTeethActive === true ) {this.ImpactedInfectedTeethCSSArray[38] = true;}
-    if (this.LargeMaxillarySinusActive === true ) { 
-      this.LargeMaxillarySinusCSSArray[38] = true;
-    }
-
-    if (this.okk === true ) {this.okCSSArray[38] = true;}
-    if (this.otherr === true ) {this.otherCSSArray[38] = true;}
-
-    if (this.postok === true ) {this.postokCSSArray[38] = true;}
-    if (this.postunsatisfactory === true ) {this.postunsatisfactoryCSSArray[38] = true;}
-    if (this.DiscoloredTeethActive === true ) {this.DiscoloredCSSArray[38] = true;}
-
-
-  }  
-    else {this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[38] = false; this.DistalCSSarray[38] = false; this.OcclusalCSSarray[38] = false;this.LingualCSSarray[38] = false;this.MesialCSSarray[38] = false;  this.teeth38 = false; 
-      this.crownCSSarray[38] = false;
-      this.rootCSSarray[38] = false;
-      this.severalDamagedCSSarray[38] = false;
-      this.MildCSSarray[38] = false;
-      this.ModerateCSSarray[38] = false;
-      this.SevereCSSarray[38] = false;
-      this.GingivalRecessionMildCSSArray[38] = false;
-      this.GingivalRecessionModerateCSSArray[38] = false;    
-      this.GingivalRecessionSevereCSSArray[38] = false;
-      this.PeriodontitisMildCSSArray[38] = false;
-      this.PeriodontitisModerateCSSArray[38] = false;    
-      this.PeriodontitisSevereCSSArray[38] = false;
-      this.GummSmileCSSArray[38] = false;
-      this.GingivalOvergrowthCSSArray[38] = false;
-      this.necrosisCSSArray[38] = false;
-      this.SatisfactoryCSSArray[38] = false;
-      this.UnsatisfactoryCSSArray[38] = false;
-      this.ApicalLesionMildCSSArray[38] = false;
-      this.ApicalLesionModerateCSSArray[38] = false;
-      this.ApicalLesionSevereCSSArray[38] = false;
-      this.BrokenInstrumentinCanalCSSArray[38] = false;
-      this.InternalCSSarray[38] = false;
-      this.ExternalCSSarray[38] = false;
-      this.MissingTeethCSSArray[38] = false;
-      this.ImpactedTeethCSSArray[38] = false;
-      this.ImpactedInfectedTeethCSSArray[38] = false;
-      this.LargeMaxillarySinusCSSArray[38] = false;
-      this.okCSSArray[38] = false;
-      this.otherCSSArray[38] = false;
-      this.postokCSSArray[38] = false;
-      this.postunsatisfactoryCSSArray[38] = false;
-      this.DiscoloredCSSArray[38] = false;
-      const found = this.selectedTeethValue.findIndex(element => element === 38);
-      this.selectedTeethValue.splice(found , 1); }}
-      this.selectedTeethValueString = this.selectedTeethValue.join(); 
   }
+  validateTooth47(mode, teethValue) {
+
+  }
+  validateTooth46(mode, teethValue) {
+
+  }
+  validateTooth45(mode, teethValue) {
+
+  }
+  validateTooth44(mode, teethValue) {
+
+  }
+  validateTooth43(mode, teethValue) {
+
+  }
+  validateTooth42(mode, teethValue) {
+
+  }
+  validateTooth41(mode, teethValue) {
+
+  }
+  validateTooth31(mode, teethValue) {
+
+  }
+  validateTooth32(mode, teethValue) {
+
+  }
+  validateTooth33(mode, teethValue) {
+
+  }
+  validateTooth34(mode, teethValue) {
+
+  }
+  validateTooth35(mode, teethValue) {
+
+  }
+  validateTooth36(mode, teethValue) {
+
+  }
+  validateTooth37(mode, teethValue) {
+
+  }
+  validateTooth38(mode, teethValue) {
+
+  }
+  
+  teeth(mode, teethValue) {
+    if (mode === 'tooth18') {
+      if (this.teeth18 === false) {
+        this.validate(mode, teethValue)
+      }
+      else {
+        this.check(mode, teethValue)
+      }
+    }
+    if (mode === 'tooth17') {
+      this.validateTooth17(mode, teethValue)
+    }
+    if (mode === 'tooth16') {
+      this.validateTooth16(mode, teethValue)
+    }
+    if (mode === 'tooth15') {
+      this.validateTooth15(mode, teethValue)
+    }
+
+    if (mode === 'tooth14') {
+      this.validateTooth14(mode, teethValue)
+    }
+    if (mode === 'tooth13') {
+      this.validateTooth13(mode, teethValue)
+    }
+    if (mode === 'tooth12') {
+      this.validateTooth12(mode, teethValue)
+    }
+    if (mode === 'tooth11') {
+      this.validateTooth11(mode, teethValue)
+    }
+    if (mode === 'tooth21') {
+      this.validateTooth21(mode, teethValue)
+    }
+    if (mode === 'tooth22') {
+      this.validateTooth22(mode, teethValue)
+    }
+    if (mode === 'tooth23') {
+      this.validateTooth23(mode, teethValue)
+    }
+    if (mode === 'tooth24') {
+      this.validateTooth24(mode, teethValue)
+    }
+    if (mode === 'tooth25') {
+      this.validateTooth25(mode, teethValue)
+    }
+    if (mode === 'tooth26') {
+      this.validateTooth26(mode, teethValue)
+    }
+    if (mode === 'tooth27') {
+      this.validateTooth27(mode, teethValue)
+    }
+    if (mode === 'tooth28') {
+      this.validateTooth28(mode, teethValue)
+    }
+    if (mode === 'tooth48') {
+      this.validateTooth48(mode, teethValue)
+    }
+    if (mode === 'tooth47') {
+      if (this.teeth47 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth47 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[47] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[47] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[47] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[47] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[47] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[47] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[47] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[47] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[47] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[47] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[47] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[47] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[47] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[47] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[47] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[47] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[47] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[47] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[47] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[47] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[47] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[47] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[47] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[47] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[47] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[47] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[47] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[47] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[47] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[47] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[47] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[47] = true;
+        }
+
+        if (this.okk === true) { this.okCSSArray[47] = true; }
+        if (this.otherr === true) { this.otherCSSArray[47] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[47] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[47] = true; }
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[47] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[47] = false; this.DistalCSSarray[47] = false; this.OcclusalCSSarray[47] = false; this.LingualCSSarray[47] = false; this.MesialCSSarray[47] = false; this.teeth47 = false;
+        this.crownCSSarray[47] = false;
+        this.rootCSSarray[47] = false;
+        this.severalDamagedCSSarray[47] = false;
+        this.MildCSSarray[47] = false;
+        this.ModerateCSSarray[47] = false;
+        this.SevereCSSarray[47] = false;
+        this.GingivalRecessionMildCSSArray[47] = false;
+        this.GingivalRecessionModerateCSSArray[47] = false;
+        this.GingivalRecessionSevereCSSArray[47] = false;
+        this.PeriodontitisMildCSSArray[47] = false;
+        this.PeriodontitisModerateCSSArray[47] = false;
+        this.PeriodontitisSevereCSSArray[47] = false;
+        this.GummSmileCSSArray[47] = false;
+        this.GingivalOvergrowthCSSArray[47] = false;
+        this.necrosisCSSArray[47] = false;
+        this.SatisfactoryCSSArray[47] = false;
+        this.UnsatisfactoryCSSArray[47] = false;
+        this.ApicalLesionMildCSSArray[47] = false;
+        this.ApicalLesionModerateCSSArray[47] = false;
+        this.ApicalLesionSevereCSSArray[47] = false;
+        this.BrokenInstrumentinCanalCSSArray[47] = false;
+        this.InternalCSSarray[47] = false;
+        this.ExternalCSSarray[47] = false;
+        this.MissingTeethCSSArray[47] = false;
+        this.ImpactedTeethCSSArray[47] = false;
+        this.ImpactedInfectedTeethCSSArray[47] = false;
+        this.LargeMaxillarySinusCSSArray[47] = false;
+        this.okCSSArray[47] = false;
+        this.otherCSSArray[47] = false;
+        this.postokCSSArray[47] = false;
+        this.postunsatisfactoryCSSArray[47] = false;
+        this.DiscoloredCSSArray[47] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 47);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth46') {
+      if (this.teeth46 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth46 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[46] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[46] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[46] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[46] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[46] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[46] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[46] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[46] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[46] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[46] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[46] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[46] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[46] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[46] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[46] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[46] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[46] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[46] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[46] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[46] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[46] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[46] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[46] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[46] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[46] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[46] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[46] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[46] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[46] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[46] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[46] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[46] = true;
+        }
+
+        if (this.okk === true) { this.okCSSArray[46] = true; }
+        if (this.otherr === true) { this.otherCSSArray[46] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[46] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[46] = true; }
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[46] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[46] = false; this.DistalCSSarray[46] = false; this.OcclusalCSSarray[46] = false; this.LingualCSSarray[46] = false; this.MesialCSSarray[46] = false; this.teeth46 = false;
+        this.crownCSSarray[46] = false;
+        this.rootCSSarray[46] = false;
+        this.severalDamagedCSSarray[46] = false;
+        this.MildCSSarray[46] = false;
+        this.ModerateCSSarray[46] = false;
+        this.SevereCSSarray[46] = false;
+        this.GingivalRecessionMildCSSArray[46] = false;
+        this.GingivalRecessionModerateCSSArray[46] = false;
+        this.GingivalRecessionSevereCSSArray[46] = false;
+        this.PeriodontitisMildCSSArray[46] = false;
+        this.PeriodontitisModerateCSSArray[46] = false;
+        this.PeriodontitisSevereCSSArray[46] = false;
+        this.GummSmileCSSArray[46] = false;
+        this.GingivalOvergrowthCSSArray[46] = false;
+        this.necrosisCSSArray[46] = false;
+        this.SatisfactoryCSSArray[46] = false;
+        this.UnsatisfactoryCSSArray[46] = false;
+        this.ApicalLesionMildCSSArray[46] = false;
+        this.ApicalLesionModerateCSSArray[46] = false;
+        this.ApicalLesionSevereCSSArray[46] = false;
+        this.BrokenInstrumentinCanalCSSArray[46] = false;
+        this.InternalCSSarray[46] = false;
+        this.ExternalCSSarray[46] = false;
+        this.MissingTeethCSSArray[46] = false;
+        this.ImpactedTeethCSSArray[46] = false;
+        this.ImpactedInfectedTeethCSSArray[46] = false;
+        this.LargeMaxillarySinusCSSArray[46] = false;
+        this.okCSSArray[46] = false;
+        this.otherCSSArray[46] = false;
+        this.postokCSSArray[46] = false;
+        this.postunsatisfactoryCSSArray[46] = false;
+        this.DiscoloredCSSArray[46] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 46);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth45') {
+      if (this.teeth45 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth45 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[45] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[45] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[45] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[45] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[45] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[45] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[45] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[45] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[45] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[45] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[45] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[45] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[45] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[45] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[45] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[45] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[45] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[45] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[45] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[45] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[45] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[45] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[45] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[45] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[45] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[45] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[45] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[45] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[45] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[45] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[45] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[45] = true;
+        }
+
+        if (this.okk === true) { this.okCSSArray[45] = true; }
+        if (this.otherr === true) { this.otherCSSArray[45] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[45] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[45] = true; }
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[45] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[45] = false; this.DistalCSSarray[45] = false; this.OcclusalCSSarray[45] = false; this.LingualCSSarray[45] = false; this.MesialCSSarray[45] = false; this.teeth45 = false;
+        this.crownCSSarray[45] = false;
+        this.rootCSSarray[45] = false;
+        this.severalDamagedCSSarray[45] = false;
+        this.MildCSSarray[45] = false;
+        this.ModerateCSSarray[45] = false;
+        this.SevereCSSarray[45] = false;
+        this.GingivalRecessionMildCSSArray[45] = false;
+        this.GingivalRecessionModerateCSSArray[45] = false;
+        this.GingivalRecessionSevereCSSArray[45] = false;
+        this.PeriodontitisMildCSSArray[45] = false;
+        this.PeriodontitisModerateCSSArray[45] = false;
+        this.PeriodontitisSevereCSSArray[45] = false;
+        this.GummSmileCSSArray[45] = false;
+        this.GingivalOvergrowthCSSArray[45] = false;
+        this.necrosisCSSArray[45] = false;
+        this.SatisfactoryCSSArray[45] = false;
+        this.UnsatisfactoryCSSArray[45] = false;
+        this.ApicalLesionMildCSSArray[45] = false;
+        this.ApicalLesionModerateCSSArray[45] = false;
+        this.ApicalLesionSevereCSSArray[45] = false;
+        this.BrokenInstrumentinCanalCSSArray[45] = false;
+        this.InternalCSSarray[45] = false;
+        this.ExternalCSSarray[45] = false;
+        this.MissingTeethCSSArray[45] = false;
+        this.ImpactedTeethCSSArray[45] = false;
+        this.ImpactedInfectedTeethCSSArray[45] = false;
+        this.LargeMaxillarySinusCSSArray[45] = false;
+        this.okCSSArray[45] = false;
+        this.otherCSSArray[45] = false;
+        this.postokCSSArray[45] = false;
+        this.postunsatisfactoryCSSArray[45] = false;
+        this.DiscoloredCSSArray[45] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 45);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth44') {
+      if (this.teeth44 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth44 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[44] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[44] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[44] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[44] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[44] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[44] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[44] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[44] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[44] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[44] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[44] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[44] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[44] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[44] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[44] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[44] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[44] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[44] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[44] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[44] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[44] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[44] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[44] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[44] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[44] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[44] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[44] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[44] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[44] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[44] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[44] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[44] = true;
+        }
+
+        if (this.okk === true) { this.okCSSArray[44] = true; }
+        if (this.otherr === true) { this.otherCSSArray[44] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[44] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[44] = true; }
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[44] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[44] = false; this.DistalCSSarray[44] = false; this.OcclusalCSSarray[44] = false; this.LingualCSSarray[44] = false; this.MesialCSSarray[44] = false; this.teeth44 = false;
+        this.crownCSSarray[44] = false;
+        this.rootCSSarray[44] = false;
+        this.severalDamagedCSSarray[44] = false;
+        this.MildCSSarray[44] = false;
+        this.ModerateCSSarray[44] = false;
+        this.SevereCSSarray[44] = false;
+        this.GingivalRecessionMildCSSArray[44] = false;
+        this.GingivalRecessionModerateCSSArray[44] = false;
+        this.GingivalRecessionSevereCSSArray[44] = false;
+        this.PeriodontitisMildCSSArray[44] = false;
+        this.PeriodontitisModerateCSSArray[44] = false;
+        this.PeriodontitisSevereCSSArray[44] = false;
+        this.GummSmileCSSArray[44] = false;
+        this.GingivalOvergrowthCSSArray[44] = false;
+        this.necrosisCSSArray[44] = false;
+        this.SatisfactoryCSSArray[44] = false;
+        this.UnsatisfactoryCSSArray[44] = false;
+        this.ApicalLesionMildCSSArray[44] = false;
+        this.ApicalLesionModerateCSSArray[44] = false;
+        this.ApicalLesionSevereCSSArray[44] = false;
+        this.BrokenInstrumentinCanalCSSArray[44] = false;
+        this.InternalCSSarray[44] = false;
+        this.ExternalCSSarray[44] = false;
+        this.MissingTeethCSSArray[44] = false;
+        this.ImpactedTeethCSSArray[44] = false;
+        this.ImpactedInfectedTeethCSSArray[44] = false;
+        this.LargeMaxillarySinusCSSArray[44] = false;
+        this.okCSSArray[44] = false;
+        this.otherCSSArray[44] = false;
+        this.postokCSSArray[44] = false;
+        this.postunsatisfactoryCSSArray[44] = false;
+        this.DiscoloredCSSArray[44] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 44);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth43') {
+      if (this.teeth43 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth43 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[43] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[43] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[43] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[43] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[43] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[43] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[43] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[43] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[43] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[43] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[43] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[43] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[43] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[43] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[43] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[43] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[43] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[43] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[43] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[43] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[43] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[43] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[43] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[43] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[43] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[43] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[43] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[43] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[43] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[43] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[43] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[43] = true;
+        }
+
+        if (this.okk === true) { this.okCSSArray[43] = true; }
+        if (this.otherr === true) { this.otherCSSArray[43] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[43] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[43] = true; }
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[43] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[43] = false; this.DistalCSSarray[43] = false; this.OcclusalCSSarray[43] = false; this.LingualCSSarray[43] = false; this.MesialCSSarray[43] = false; this.teeth43 = false;
+        this.crownCSSarray[43] = false;
+        this.rootCSSarray[43] = false;
+        this.severalDamagedCSSarray[43] = false;
+        this.MildCSSarray[43] = false;
+        this.ModerateCSSarray[43] = false;
+        this.SevereCSSarray[43] = false;
+        this.GingivalRecessionMildCSSArray[43] = false;
+        this.GingivalRecessionModerateCSSArray[43] = false;
+        this.GingivalRecessionSevereCSSArray[43] = false;
+        this.PeriodontitisMildCSSArray[43] = false;
+        this.PeriodontitisModerateCSSArray[43] = false;
+        this.PeriodontitisSevereCSSArray[43] = false;
+        this.GummSmileCSSArray[43] = false;
+        this.GingivalOvergrowthCSSArray[43] = false;
+        this.necrosisCSSArray[43] = false;
+        this.SatisfactoryCSSArray[43] = false;
+        this.UnsatisfactoryCSSArray[43] = false;
+        this.ApicalLesionMildCSSArray[43] = false;
+        this.ApicalLesionModerateCSSArray[43] = false;
+        this.ApicalLesionSevereCSSArray[43] = false;
+        this.BrokenInstrumentinCanalCSSArray[43] = false;
+        this.InternalCSSarray[43] = false;
+        this.ExternalCSSarray[43] = false;
+        this.MissingTeethCSSArray[43] = false;
+        this.ImpactedTeethCSSArray[43] = false;
+        this.ImpactedInfectedTeethCSSArray[43] = false;
+        this.LargeMaxillarySinusCSSArray[43] = false;
+        this.okCSSArray[43] = false;
+        this.otherCSSArray[43] = false;
+        this.postokCSSArray[43] = false;
+        this.postunsatisfactoryCSSArray[43] = false;
+        this.DiscoloredCSSArray[43] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 43);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth42') {
+      if (this.teeth42 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth42 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[42] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[42] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[42] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[42] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[42] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[42] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[42] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[42] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[42] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[42] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[42] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[42] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[42] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[42] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[42] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[42] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[42] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[42] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[42] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[42] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[42] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[42] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[42] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[42] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[42] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[42] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[42] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[42] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[42] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[42] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[42] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[42] = true;
+        }
+
+        if (this.okk === true) { this.okCSSArray[42] = true; }
+        if (this.otherr === true) { this.otherCSSArray[42] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[42] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[42] = true; }
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[42] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[42] = false; this.DistalCSSarray[42] = false; this.OcclusalCSSarray[42] = false; this.LingualCSSarray[42] = false; this.MesialCSSarray[42] = false; this.teeth42 = false;
+        this.crownCSSarray[42] = false;
+        this.rootCSSarray[42] = false;
+        this.severalDamagedCSSarray[42] = false;
+        this.MildCSSarray[42] = false;
+        this.ModerateCSSarray[42] = false;
+        this.SevereCSSarray[42] = false;
+        this.GingivalRecessionMildCSSArray[42] = false;
+        this.GingivalRecessionModerateCSSArray[42] = false;
+        this.GingivalRecessionSevereCSSArray[42] = false;
+        this.PeriodontitisMildCSSArray[42] = false;
+        this.PeriodontitisModerateCSSArray[42] = false;
+        this.PeriodontitisSevereCSSArray[42] = false;
+        this.GummSmileCSSArray[42] = false;
+        this.GingivalOvergrowthCSSArray[42] = false;
+        this.necrosisCSSArray[42] = false;
+        this.SatisfactoryCSSArray[42] = false;
+        this.UnsatisfactoryCSSArray[42] = false;
+        this.ApicalLesionMildCSSArray[42] = false;
+        this.ApicalLesionModerateCSSArray[42] = false;
+        this.ApicalLesionSevereCSSArray[42] = false;
+        this.BrokenInstrumentinCanalCSSArray[42] = false;
+        this.InternalCSSarray[42] = false;
+        this.ExternalCSSarray[42] = false;
+        this.MissingTeethCSSArray[42] = false;
+        this.ImpactedTeethCSSArray[42] = false;
+        this.ImpactedInfectedTeethCSSArray[42] = false;
+        this.LargeMaxillarySinusCSSArray[42] = false;
+        this.okCSSArray[42] = false;
+        this.otherCSSArray[42] = false;
+        this.postokCSSArray[42] = false;
+        this.postunsatisfactoryCSSArray[42] = false;
+        this.DiscoloredCSSArray[42] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 42);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth41') {
+      if (this.teeth41 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth41 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[41] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[41] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[41] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[41] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[41] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[41] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[41] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[41] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[41] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[41] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[41] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[41] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[41] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[41] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[41] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[41] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[41] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[41] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[41] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[41] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[41] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[41] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[41] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[41] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[41] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[41] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[41] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[41] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[41] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[41] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[41] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[41] = true;
+        }
+
+        if (this.okk === true) { this.okCSSArray[41] = true; }
+        if (this.otherr === true) { this.otherCSSArray[41] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[41] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[41] = true; }
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[41] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[41] = false; this.DistalCSSarray[41] = false; this.OcclusalCSSarray[41] = false; this.LingualCSSarray[41] = false; this.MesialCSSarray[41] = false; this.teeth41 = false;
+        this.crownCSSarray[41] = false;
+        this.rootCSSarray[41] = false;
+        this.severalDamagedCSSarray[41] = false;
+        this.MildCSSarray[41] = false;
+        this.ModerateCSSarray[41] = false;
+        this.SevereCSSarray[41] = false;
+        this.GingivalRecessionMildCSSArray[41] = false;
+        this.GingivalRecessionModerateCSSArray[41] = false;
+        this.GingivalRecessionSevereCSSArray[41] = false;
+        this.PeriodontitisMildCSSArray[41] = false;
+        this.PeriodontitisModerateCSSArray[41] = false;
+        this.PeriodontitisSevereCSSArray[41] = false;
+        this.GummSmileCSSArray[41] = false;
+        this.GingivalOvergrowthCSSArray[41] = false;
+        this.necrosisCSSArray[41] = false;
+        this.SatisfactoryCSSArray[41] = false;
+        this.UnsatisfactoryCSSArray[41] = false;
+        this.ApicalLesionMildCSSArray[41] = false;
+        this.ApicalLesionModerateCSSArray[41] = false;
+        this.ApicalLesionSevereCSSArray[41] = false;
+        this.BrokenInstrumentinCanalCSSArray[41] = false;
+        this.InternalCSSarray[41] = false;
+        this.ExternalCSSarray[41] = false;
+        this.MissingTeethCSSArray[41] = false;
+        this.ImpactedTeethCSSArray[41] = false;
+        this.ImpactedInfectedTeethCSSArray[41] = false;
+        this.LargeMaxillarySinusCSSArray[41] = false;
+        this.okCSSArray[41] = false;
+        this.otherCSSArray[41] = false;
+        this.postokCSSArray[41] = false;
+        this.postunsatisfactoryCSSArray[41] = false;
+        this.DiscoloredCSSArray[41] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 41);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth31') {
+      if (this.teeth31 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth31 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[31] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[31] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[31] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[31] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[31] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[31] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[31] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[31] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[31] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[31] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[31] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[31] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[31] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[31] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[31] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[31] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[31] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[31] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[31] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[31] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[31] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[31] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[31] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[31] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[31] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[31] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[31] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[31] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[31] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[31] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[31] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[31] = true;
+        }
+        if (this.okk === true) { this.okCSSArray[31] = true; }
+        if (this.otherr === true) { this.otherCSSArray[31] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[31] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[31] = true; }
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[31] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[31] = false; this.DistalCSSarray[31] = false; this.OcclusalCSSarray[31] = false; this.LingualCSSarray[31] = false; this.MesialCSSarray[31] = false; this.teeth31 = false;
+        this.crownCSSarray[31] = false;
+        this.rootCSSarray[31] = false;
+        this.severalDamagedCSSarray[31] = false;
+        this.MildCSSarray[31] = false;
+        this.ModerateCSSarray[31] = false;
+        this.SevereCSSarray[31] = false;
+        this.GingivalRecessionMildCSSArray[31] = false;
+        this.GingivalRecessionModerateCSSArray[31] = false;
+        this.GingivalRecessionSevereCSSArray[31] = false;
+        this.PeriodontitisMildCSSArray[31] = false;
+        this.PeriodontitisModerateCSSArray[31] = false;
+        this.PeriodontitisSevereCSSArray[31] = false;
+        this.GummSmileCSSArray[31] = false;
+        this.GingivalOvergrowthCSSArray[31] = false;
+        this.necrosisCSSArray[31] = false;
+        this.SatisfactoryCSSArray[31] = false;
+        this.UnsatisfactoryCSSArray[31] = false;
+        this.ApicalLesionMildCSSArray[31] = false;
+        this.ApicalLesionModerateCSSArray[31] = false;
+        this.ApicalLesionSevereCSSArray[31] = false;
+        this.BrokenInstrumentinCanalCSSArray[31] = false;
+        this.InternalCSSarray[31] = false;
+        this.ExternalCSSarray[31] = false;
+        this.MissingTeethCSSArray[31] = false;
+        this.ImpactedTeethCSSArray[31] = false;
+        this.ImpactedInfectedTeethCSSArray[31] = false;
+        this.LargeMaxillarySinusCSSArray[31] = false;
+        this.okCSSArray[31] = false;
+        this.otherCSSArray[31] = false;
+        this.postokCSSArray[31] = false;
+        this.postunsatisfactoryCSSArray[31] = false;
+        this.DiscoloredCSSArray[31] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 31);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth32') {
+      if (this.teeth32 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth32 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[32] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[32] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[32] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[32] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[32] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[32] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[32] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[32] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[32] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[32] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[32] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[32] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[32] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[32] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[32] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[32] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[32] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[32] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[32] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[32] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[32] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[32] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[32] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[32] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[32] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[32] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[32] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[32] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[32] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[32] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[32] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[32] = true;
+        }
+        if (this.okk === true) { this.okCSSArray[32] = true; }
+        if (this.otherr === true) { this.otherCSSArray[32] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[32] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[32] = true; }
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[32] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[32] = false; this.DistalCSSarray[32] = false; this.OcclusalCSSarray[32] = false; this.LingualCSSarray[32] = false; this.MesialCSSarray[32] = false; this.teeth32 = false;
+        this.crownCSSarray[32] = false;
+        this.rootCSSarray[32] = false;
+        this.severalDamagedCSSarray[32] = false;
+        this.MildCSSarray[32] = false;
+        this.ModerateCSSarray[32] = false;
+        this.SevereCSSarray[32] = false;
+        this.GingivalRecessionMildCSSArray[32] = false;
+        this.GingivalRecessionModerateCSSArray[32] = false;
+        this.GingivalRecessionSevereCSSArray[32] = false;
+        this.PeriodontitisMildCSSArray[32] = false;
+        this.PeriodontitisModerateCSSArray[32] = false;
+        this.PeriodontitisSevereCSSArray[32] = false;
+        this.GummSmileCSSArray[32] = false;
+        this.GingivalOvergrowthCSSArray[32] = false;
+        this.necrosisCSSArray[32] = false;
+        this.SatisfactoryCSSArray[32] = false;
+        this.UnsatisfactoryCSSArray[32] = false;
+        this.ApicalLesionMildCSSArray[32] = false;
+        this.ApicalLesionModerateCSSArray[32] = false;
+        this.ApicalLesionSevereCSSArray[32] = false;
+        this.BrokenInstrumentinCanalCSSArray[32] = false;
+        this.InternalCSSarray[32] = false;
+        this.ExternalCSSarray[32] = false;
+        this.MissingTeethCSSArray[32] = false;
+        this.ImpactedTeethCSSArray[32] = false;
+        this.ImpactedInfectedTeethCSSArray[32] = false;
+        this.LargeMaxillarySinusCSSArray[32] = false;
+        this.okCSSArray[32] = false;
+        this.otherCSSArray[32] = false;
+        this.postokCSSArray[32] = false;
+        this.postunsatisfactoryCSSArray[32] = false;
+        this.DiscoloredCSSArray[32] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 32);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth33') {
+      if (this.teeth33 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth33 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[33] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[33] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[33] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[33] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[33] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[33] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[33] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[33] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[33] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[33] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[33] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[33] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[33] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[33] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[33] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[33] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[33] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[33] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[33] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[33] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[33] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[33] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[33] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[33] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[33] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[33] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[33] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[33] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[33] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[33] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[33] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[33] = true;
+        }
+        if (this.okk === true) { this.okCSSArray[33] = true; }
+        if (this.otherr === true) { this.otherCSSArray[33] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[33] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[33] = true; }
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[33] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[33] = false; this.DistalCSSarray[33] = false; this.OcclusalCSSarray[33] = false; this.LingualCSSarray[33] = false; this.MesialCSSarray[33] = false; this.teeth33 = false;
+        this.crownCSSarray[33] = false;
+        this.rootCSSarray[33] = false;
+        this.severalDamagedCSSarray[33] = false;
+        this.MildCSSarray[33] = false;
+        this.ModerateCSSarray[33] = false;
+        this.SevereCSSarray[33] = false;
+        this.GingivalRecessionMildCSSArray[33] = false;
+        this.GingivalRecessionModerateCSSArray[33] = false;
+        this.GingivalRecessionSevereCSSArray[33] = false;
+        this.PeriodontitisMildCSSArray[33] = false;
+        this.PeriodontitisModerateCSSArray[33] = false;
+        this.PeriodontitisSevereCSSArray[33] = false;
+        this.GummSmileCSSArray[33] = false;
+        this.GingivalOvergrowthCSSArray[33] = false;
+        this.necrosisCSSArray[33] = false;
+        this.SatisfactoryCSSArray[33] = false;
+        this.UnsatisfactoryCSSArray[33] = false;
+        this.ApicalLesionMildCSSArray[33] = false;
+        this.ApicalLesionModerateCSSArray[33] = false;
+        this.ApicalLesionSevereCSSArray[33] = false;
+        this.BrokenInstrumentinCanalCSSArray[33] = false;
+        this.InternalCSSarray[33] = false;
+        this.ExternalCSSarray[33] = false;
+        this.MissingTeethCSSArray[33] = false;
+        this.ImpactedTeethCSSArray[33] = false;
+        this.ImpactedInfectedTeethCSSArray[33] = false;
+        this.LargeMaxillarySinusCSSArray[33] = false;
+        this.okCSSArray[33] = false;
+        this.otherCSSArray[33] = false;
+        this.postokCSSArray[33] = false;
+        this.postunsatisfactoryCSSArray[33] = false;
+        this.DiscoloredCSSArray[33] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 33);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth34') {
+      if (this.teeth34 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth34 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[34] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[34] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[34] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[34] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[34] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[34] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[34] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[34] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[34] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[34] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[34] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[34] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[34] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[34] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[34] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[34] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[34] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[34] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[34] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[34] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[34] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[34] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[34] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[34] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[34] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[34] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[34] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[34] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[34] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[34] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[34] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[34] = true;
+        }
+
+        if (this.okk === true) { this.okCSSArray[34] = true; }
+        if (this.otherr === true) { this.otherCSSArray[34] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[34] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[34] = true; }
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[34] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[34] = false; this.DistalCSSarray[34] = false; this.OcclusalCSSarray[34] = false; this.LingualCSSarray[34] = false; this.MesialCSSarray[34] = false; this.teeth34 = false;
+        this.crownCSSarray[34] = false;
+        this.rootCSSarray[34] = false;
+        this.severalDamagedCSSarray[34] = false;
+        this.MildCSSarray[34] = false;
+        this.ModerateCSSarray[34] = false;
+        this.SevereCSSarray[34] = false;
+        this.GingivalRecessionMildCSSArray[34] = false;
+        this.GingivalRecessionModerateCSSArray[34] = false;
+        this.GingivalRecessionSevereCSSArray[34] = false;
+        this.PeriodontitisMildCSSArray[34] = false;
+        this.PeriodontitisModerateCSSArray[34] = false;
+        this.PeriodontitisSevereCSSArray[34] = false;
+        this.GummSmileCSSArray[34] = false;
+        this.GingivalOvergrowthCSSArray[34] = false;
+        this.necrosisCSSArray[34] = false;
+        this.SatisfactoryCSSArray[34] = false;
+        this.UnsatisfactoryCSSArray[34] = false;
+        this.ApicalLesionMildCSSArray[34] = false;
+        this.ApicalLesionModerateCSSArray[34] = false;
+        this.ApicalLesionSevereCSSArray[34] = false;
+        this.BrokenInstrumentinCanalCSSArray[34] = false;
+        this.InternalCSSarray[34] = false;
+        this.ExternalCSSarray[34] = false;
+        this.MissingTeethCSSArray[34] = false;
+        this.ImpactedTeethCSSArray[34] = false;
+        this.ImpactedInfectedTeethCSSArray[34] = false;
+        this.LargeMaxillarySinusCSSArray[34] = false;
+        this.okCSSArray[34] = false;
+        this.otherCSSArray[34] = false;
+        this.postokCSSArray[34] = false;
+        this.postunsatisfactoryCSSArray[34] = false;
+        this.DiscoloredCSSArray[34] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 34);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth35') {
+      if (this.teeth35 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth35 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[35] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[35] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[35] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[35] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[35] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[35] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[35] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[35] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[35] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[35] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[35] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[35] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[35] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[35] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[35] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[35] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[35] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[35] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[35] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[35] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[35] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[35] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[35] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[35] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[35] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[35] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[35] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[35] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[35] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[35] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[35] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[35] = true;
+        }
+
+        if (this.okk === true) { this.okCSSArray[35] = true; }
+        if (this.otherr === true) { this.otherCSSArray[35] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[35] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[35] = true; }
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[35] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[35] = false; this.DistalCSSarray[35] = false; this.OcclusalCSSarray[35] = false; this.LingualCSSarray[35] = false; this.MesialCSSarray[35] = false; this.teeth35 = false;
+        this.crownCSSarray[35] = false;
+        this.rootCSSarray[35] = false;
+        this.severalDamagedCSSarray[35] = false;
+        this.MildCSSarray[35] = false;
+        this.ModerateCSSarray[35] = false;
+        this.SevereCSSarray[35] = false;
+        this.GingivalRecessionMildCSSArray[35] = false;
+        this.GingivalRecessionModerateCSSArray[35] = false;
+        this.GingivalRecessionSevereCSSArray[35] = false;
+        this.PeriodontitisMildCSSArray[35] = false;
+        this.PeriodontitisModerateCSSArray[35] = false;
+        this.PeriodontitisSevereCSSArray[35] = false;
+        this.GummSmileCSSArray[35] = false;
+        this.GingivalOvergrowthCSSArray[35] = false;
+        this.necrosisCSSArray[35] = false;
+        this.SatisfactoryCSSArray[35] = false;
+        this.UnsatisfactoryCSSArray[35] = false;
+        this.ApicalLesionMildCSSArray[35] = false;
+        this.ApicalLesionModerateCSSArray[35] = false;
+        this.ApicalLesionSevereCSSArray[35] = false;
+        this.BrokenInstrumentinCanalCSSArray[35] = false;
+        this.InternalCSSarray[35] = false;
+        this.ExternalCSSarray[35] = false;
+        this.MissingTeethCSSArray[35] = false;
+        this.ImpactedTeethCSSArray[35] = false;
+        this.ImpactedInfectedTeethCSSArray[35] = false;
+        this.LargeMaxillarySinusCSSArray[35] = false;
+        this.okCSSArray[35] = false;
+        this.otherCSSArray[35] = false;
+        this.postokCSSArray[35] = false;
+        this.postunsatisfactoryCSSArray[35] = false;
+        this.DiscoloredCSSArray[35] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 35);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth36') {
+      if (this.teeth36 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth36 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[36] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[36] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[36] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[36] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[36] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[36] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[36] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[36] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[36] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[36] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[36] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[36] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[36] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[36] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[36] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[36] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[36] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[36] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[36] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[36] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[36] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[36] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[36] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[36] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[36] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[36] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[36] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[36] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[36] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[36] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[36] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[36] = true;
+        }
+
+        if (this.okk === true) { this.okCSSArray[36] = true; }
+        if (this.otherr === true) { this.otherCSSArray[36] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[36] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[36] = true; }
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[36] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[36] = false; this.DistalCSSarray[36] = false; this.OcclusalCSSarray[36] = false; this.LingualCSSarray[36] = false; this.MesialCSSarray[36] = false; this.teeth36 = false;
+        this.crownCSSarray[36] = false;
+        this.rootCSSarray[36] = false;
+        this.severalDamagedCSSarray[36] = false;
+        this.MildCSSarray[36] = false;
+        this.ModerateCSSarray[36] = false;
+        this.SevereCSSarray[36] = false;
+        this.GingivalRecessionMildCSSArray[36] = false;
+        this.GingivalRecessionModerateCSSArray[36] = false;
+        this.GingivalRecessionSevereCSSArray[36] = false;
+        this.PeriodontitisMildCSSArray[36] = false;
+        this.PeriodontitisModerateCSSArray[36] = false;
+        this.PeriodontitisSevereCSSArray[36] = false;
+        this.GummSmileCSSArray[36] = false;
+        this.GingivalOvergrowthCSSArray[36] = false;
+        this.necrosisCSSArray[36] = false;
+        this.SatisfactoryCSSArray[36] = false;
+        this.UnsatisfactoryCSSArray[36] = false;
+        this.ApicalLesionMildCSSArray[36] = false;
+        this.ApicalLesionModerateCSSArray[36] = false;
+        this.ApicalLesionSevereCSSArray[36] = false;
+        this.BrokenInstrumentinCanalCSSArray[36] = false;
+        this.InternalCSSarray[36] = false;
+        this.ExternalCSSarray[36] = false;
+        this.MissingTeethCSSArray[36] = false;
+        this.ImpactedTeethCSSArray[36] = false;
+        this.ImpactedInfectedTeethCSSArray[36] = false;
+        this.LargeMaxillarySinusCSSArray[36] = false;
+        this.okCSSArray[36] = false;
+        this.otherCSSArray[36] = false;
+        this.postokCSSArray[36] = false;
+        this.postunsatisfactoryCSSArray[36] = false;
+        this.DiscoloredCSSArray[36] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 36);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth37') {
+      if (this.teeth37 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth37 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[37] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[37] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[37] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[37] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[37] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[37] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[37] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[37] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[37] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[37] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[37] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[37] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[37] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[37] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[37] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[37] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[37] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[37] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[37] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[37] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[37] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[37] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[37] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[37] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[37] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[37] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[37] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[37] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[37] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[37] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[37] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[37] = true;
+        }
+
+        if (this.okk === true) { this.okCSSArray[37] = true; }
+        if (this.otherr === true) { this.otherCSSArray[37] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[37] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[37] = true; }
+
+
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[37] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[37] = false; this.DistalCSSarray[37] = false; this.OcclusalCSSarray[37] = false; this.LingualCSSarray[37] = false; this.MesialCSSarray[37] = false; this.teeth37 = false;
+        this.crownCSSarray[37] = false;
+        this.rootCSSarray[37] = false;
+        this.severalDamagedCSSarray[37] = false;
+        this.MildCSSarray[37] = false;
+        this.ModerateCSSarray[37] = false;
+        this.SevereCSSarray[37] = false;
+        this.GingivalRecessionMildCSSArray[37] = false;
+        this.GingivalRecessionModerateCSSArray[37] = false;
+        this.GingivalRecessionSevereCSSArray[37] = false;
+        this.PeriodontitisMildCSSArray[37] = false;
+        this.PeriodontitisModerateCSSArray[37] = false;
+        this.PeriodontitisSevereCSSArray[37] = false;
+        this.GummSmileCSSArray[37] = false;
+        this.GingivalOvergrowthCSSArray[37] = false;
+        this.necrosisCSSArray[37] = false;
+        this.SatisfactoryCSSArray[37] = false;
+        this.UnsatisfactoryCSSArray[37] = false;
+        this.ApicalLesionMildCSSArray[37] = false;
+        this.ApicalLesionModerateCSSArray[37] = false;
+        this.ApicalLesionSevereCSSArray[37] = false;
+        this.BrokenInstrumentinCanalCSSArray[37] = false;
+        this.InternalCSSarray[37] = false;
+        this.ExternalCSSarray[37] = false;
+        this.MissingTeethCSSArray[37] = false;
+        this.ImpactedTeethCSSArray[37] = false;
+        this.ImpactedInfectedTeethCSSArray[37] = false;
+        this.LargeMaxillarySinusCSSArray[37] = false;
+        this.okCSSArray[37] = false;
+        this.otherCSSArray[37] = false;
+        this.postokCSSArray[37] = false;
+        this.postunsatisfactoryCSSArray[37] = false;
+        this.DiscoloredCSSArray[37] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 37);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    if (mode === 'tooth38') {
+      if (this.teeth38 === false) {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.teeth38 = true; this.selectedTeethValue.push(teethValue);
+        if (this.Mesialchecked === true) { this.MesialCSSarray[38] = true; }
+        if (this.Distalchecked === true) { this.DistalCSSarray[38] = true; }
+        if (this.Lingualchecked === true) { this.LingualCSSarray[38] = true; }
+        if (this.Occlusalchecked === true) { this.OcclusalCSSarray[38] = true; }
+        if (this.Buccalchecked === true) { this.BuccalCSSarray[38] = true; }
+
+        if (this.rootSection === true) { this.rootCSSarray[38] = true; }
+        if (this.crownSection === true) { this.crownCSSarray[38] = true; }
+        if (this.severalDamaged === true) { this.severalDamagedCSSarray[38] = true; }
+
+        if (this.MildSection === true) { this.MildCSSarray[38] = true; }
+        if (this.ModerateSection === true) { this.ModerateCSSarray[38] = true; }
+        if (this.SevereSection === true) { this.SevereCSSarray[38] = true; }
+
+        if (this.GingivalRecessionMild === true) { this.GingivalRecessionMildCSSArray[38] = true; }
+        if (this.GingivalRecessionModerate === true) { this.GingivalRecessionModerateCSSArray[38] = true; }
+        if (this.GingivalRecessionSevere === true) { this.GingivalRecessionSevereCSSArray[38] = true; }
+
+        if (this.PeriodontitisMild === true) { this.PeriodontitisMildCSSArray[38] = true; }
+        if (this.PeriodontitisModerate === true) { this.PeriodontitisModerateCSSArray[38] = true; }
+        if (this.PeriodontitisSevere === true) { this.PeriodontitisSevereCSSArray[38] = true; }
+
+        if (this.GummSmileActive === true) { this.GummSmileCSSArray[38] = true; }
+        if (this.GingivalOvergrowthActive === true) { this.GingivalOvergrowthCSSArray[38] = true; }
+
+        if (this.necrosis === true) { this.necrosisCSSArray[38] = true; }
+
+        if (this.saticfactory === true) { this.SatisfactoryCSSArray[38] = true; }
+        if (this.unsatisfactory === true) { this.UnsatisfactoryCSSArray[38] = true; }
+
+        if (this.ApicalLesionMild === true) { this.ApicalLesionMildCSSArray[38] = true; }
+        if (this.ApicalLesionModerate === true) { this.ApicalLesionModerateCSSArray[38] = true; }
+        if (this.ApicalLesionSevere === true) { this.ApicalLesionSevereCSSArray[38] = true; }
+        if (this.BrokenInstrumentinCanal === true) { this.BrokenInstrumentinCanalCSSArray[38] = true; }
+        if (this.Internalchecked === true) { this.InternalCSSarray[38] = true; }
+        if (this.Externalchecked === true) { this.ExternalCSSarray[38] = true; }
+
+        if (this.MissingTeethActive === true) { this.MissingTeethCSSArray[38] = true; }
+        if (this.ImpactedTeethActive === true) { this.ImpactedTeethCSSArray[38] = true; }
+        if (this.ImpactedInfectedTeethActive === true) { this.ImpactedInfectedTeethCSSArray[38] = true; }
+        if (this.LargeMaxillarySinusActive === true) {
+          this.LargeMaxillarySinusCSSArray[38] = true;
+        }
+
+        if (this.okk === true) { this.okCSSArray[38] = true; }
+        if (this.otherr === true) { this.otherCSSArray[38] = true; }
+
+        if (this.postok === true) { this.postokCSSArray[38] = true; }
+        if (this.postunsatisfactory === true) { this.postunsatisfactoryCSSArray[38] = true; }
+        if (this.DiscoloredTeethActive === true) { this.DiscoloredCSSArray[38] = true; }
+
+
+      }
+      else {
+        this.ColorCssFn(mode); this.vaneerFnValue(mode); this.crownFnValue(mode); this.onlayFnValue(mode); this.BuccalCSSarray[38] = false; this.DistalCSSarray[38] = false; this.OcclusalCSSarray[38] = false; this.LingualCSSarray[38] = false; this.MesialCSSarray[38] = false; this.teeth38 = false;
+        this.crownCSSarray[38] = false;
+        this.rootCSSarray[38] = false;
+        this.severalDamagedCSSarray[38] = false;
+        this.MildCSSarray[38] = false;
+        this.ModerateCSSarray[38] = false;
+        this.SevereCSSarray[38] = false;
+        this.GingivalRecessionMildCSSArray[38] = false;
+        this.GingivalRecessionModerateCSSArray[38] = false;
+        this.GingivalRecessionSevereCSSArray[38] = false;
+        this.PeriodontitisMildCSSArray[38] = false;
+        this.PeriodontitisModerateCSSArray[38] = false;
+        this.PeriodontitisSevereCSSArray[38] = false;
+        this.GummSmileCSSArray[38] = false;
+        this.GingivalOvergrowthCSSArray[38] = false;
+        this.necrosisCSSArray[38] = false;
+        this.SatisfactoryCSSArray[38] = false;
+        this.UnsatisfactoryCSSArray[38] = false;
+        this.ApicalLesionMildCSSArray[38] = false;
+        this.ApicalLesionModerateCSSArray[38] = false;
+        this.ApicalLesionSevereCSSArray[38] = false;
+        this.BrokenInstrumentinCanalCSSArray[38] = false;
+        this.InternalCSSarray[38] = false;
+        this.ExternalCSSarray[38] = false;
+        this.MissingTeethCSSArray[38] = false;
+        this.ImpactedTeethCSSArray[38] = false;
+        this.ImpactedInfectedTeethCSSArray[38] = false;
+        this.LargeMaxillarySinusCSSArray[38] = false;
+        this.okCSSArray[38] = false;
+        this.otherCSSArray[38] = false;
+        this.postokCSSArray[38] = false;
+        this.postunsatisfactoryCSSArray[38] = false;
+        this.DiscoloredCSSArray[38] = false;
+        const found = this.selectedTeethValue.findIndex(element => element === 38);
+        this.selectedTeethValue.splice(found, 1);
+      }
+    }
+    this.selectedTeethValueString = this.selectedTeethValue.join();
+  }
+
 
   multiSelectTeeth(id) {
     if (id === '1'){ if (this.teeth18 === false && this.teeth17 === false && this.teeth16 === false &&  this.teeth15 === false && 
