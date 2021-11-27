@@ -55,7 +55,7 @@ AppModule = __decorate([
             BrowserModule,
             NgxSpinnerModule,
             BrowserAnimationsModule,
-            RouterModule.forRoot(AppRoutes, { useHash: true, onSameUrlNavigation: 'reload' }),
+            RouterModule.forRoot(AppRoutes, { useHash: true, onSameUrlNavigation: 'reload', relativeLinkResolution: 'legacy' }),
             NgbModule,
             FormsModule,
             PerfectScrollbarModule,

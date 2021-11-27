@@ -56,7 +56,7 @@ registerLocaleData(localeHi, 'hi-HI', localeHiExtra);
         BrowserModule,
         NgxSpinnerModule,
         BrowserAnimationsModule,
-        RouterModule.forRoot(AppRoutes, { useHash: true, onSameUrlNavigation: 'reload' }),
+        RouterModule.forRoot(AppRoutes, { useHash: true, onSameUrlNavigation: 'reload', relativeLinkResolution: 'legacy' }),
         NgbModule,
         FormsModule,
         PerfectScrollbarModule,
