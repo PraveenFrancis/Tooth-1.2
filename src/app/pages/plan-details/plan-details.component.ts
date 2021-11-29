@@ -1997,52 +1997,6 @@ public PatientID = parseInt(this.route.snapshot.paramMap.get('PatientID'), 10);
       this.selectedTeethValue.splice(found, 1);
     }
   }
-  validateTooth47(mode, teethValue) {
-
-  }
-  validateTooth46(mode, teethValue) {
-
-  }
-  validateTooth45(mode, teethValue) {
-
-  }
-  validateTooth44(mode, teethValue) {
-
-  }
-  validateTooth43(mode, teethValue) {
-
-  }
-  validateTooth42(mode, teethValue) {
-
-  }
-  validateTooth41(mode, teethValue) {
-
-  }
-  validateTooth31(mode, teethValue) {
-
-  }
-  validateTooth32(mode, teethValue) {
-
-  }
-  validateTooth33(mode, teethValue) {
-
-  }
-  validateTooth34(mode, teethValue) {
-
-  }
-  validateTooth35(mode, teethValue) {
-
-  }
-  validateTooth36(mode, teethValue) {
-
-  }
-  validateTooth37(mode, teethValue) {
-
-  }
-  validateTooth38(mode, teethValue) {
-
-  }
-  
   teeth(mode, teethValue) {
     if (mode === 'tooth18') {
       if (this.teeth18 === false) {
